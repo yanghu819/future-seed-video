@@ -1,0 +1,5 @@
+goal=P4_ratio67_seed20260310_recheck
+metric_primary=maskacc_fg_val
+threshold_coarse=+0.008
+fixed=data=realvideo_complex_midfirst,vocab=32,seq_len=1728,mask=prefix:0.67,n_layer=3,n_embd=192,head=32,device_bsz=24,batch=96,max_iters=60,eval_interval=20,eval_iters=10,maskacc_iters=20,fg_threshold=2,random_seed=20260310
+change=FUTURE_SEED(0|1),ALPHA(fs1=-2)

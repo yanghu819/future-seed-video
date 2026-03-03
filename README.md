@@ -13,12 +13,6 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - 2 seeds pass
 - avg `delta_maskacc_fg_val = +0.0408`
 
-## Candidate / needs re-check
-
-1. `realvideo_complex_v1_ratio67_coarse150_20260303T132507Z`
-- coarse showed `delta_maskacc_fg_val = +0.0263` (early stop)
-- but follow-up `confirmlite2` did not reproduce gain
-
 ## Pruned / negative lines
 
 1. `realvideo_cross_v1_coarse120_20260303T082857Z`
@@ -29,13 +23,20 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - seeds `20260313/20260314`
 - avg `delta_maskacc_fg_val = 0.0000` (failed confirm-like rule)
 
-3. `realvideo_complex_v1_scaleM_L4E256_ratio50_coarse120_20260303T160109Z`
+3. `realvideo_complex_v1_ratio67_seed20260310_recheck_20260303T182041Z`
+- same seed used in earlier coarse-positive report (`20260310`) but with the frozen confirm-lite config
+- `delta_maskacc_fg_val = 0.0000` (non-reproducible)
+
+4. `realvideo_complex_v1_scaleM_L4E256_ratio50_coarse120_20260303T160109Z`
 - medium scale (`L4/E256`), compared at step40 for FS0/FS1
 - `delta_maskacc_fg_val = 0.0000` (pruned)
 
-4. `realvideo_complex_v1_scaleL6E384_ratio50_coarse150_fit_20260303T154725Z`
+5. `realvideo_complex_v1_scaleL6E384_ratio50_coarse150_fit_20260303T154725Z`
 - large scale (`L6/E384`) too slow under `RWKV7_KERNEL=python`
 - hard-stop (`exit_code=143`)
+
+## Notes
+- `realvideo_complex_v1_ratio67_coarse150_20260303T132507Z` showed a one-off positive coarse result (`+0.0263`), but follow-up reproductions did not hold under frozen recheck settings.
 
 ## Content per run
 - `summary_rows.csv`
