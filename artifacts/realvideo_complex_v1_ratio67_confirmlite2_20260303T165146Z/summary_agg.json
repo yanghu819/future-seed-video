@@ -1,0 +1,31 @@
+{
+  "realvideo_complex_v1_ratio67_confirmlite2": {
+    "seeds": [
+      {
+        "seed": 20260313,
+        "delta_maskacc_fg_val": 0.0,
+        "delta_maskacc_val": 0.0,
+        "delta_last_val_loss": -0.00039999999999995595,
+        "best_maskacc_fg_val_fs0": 0.048,
+        "best_maskacc_fg_val_fs1": 0.048,
+        "exit_code_fs0": 0,
+        "exit_code_fs1": 0
+      },
+      {
+        "seed": 20260314,
+        "delta_maskacc_fg_val": 0.0,
+        "delta_maskacc_val": 0.0,
+        "delta_last_val_loss": -0.0002999999999997449,
+        "best_maskacc_fg_val_fs0": 0.048,
+        "best_maskacc_fg_val_fs1": 0.048,
+        "exit_code_fs0": 0,
+        "exit_code_fs1": 0
+      }
+    ],
+    "avg_delta_maskacc_fg_val": 0.0,
+    "avg_delta_maskacc_val": 0.0,
+    "all_seed_delta_fg_nonneg": true,
+    "all_exit_zero": true,
+    "pass_rule": false
+  }
+}
