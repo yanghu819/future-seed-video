@@ -1,0 +1,13 @@
+{
+  "realvideo_complex_v1": {
+    "best_maskacc_val_fs0": 0.049,
+    "best_maskacc_val_fs1": 0.0809,
+    "delta_maskacc_val": 0.0319,
+    "best_maskacc_fg_val_fs0": 0.0534,
+    "best_maskacc_fg_val_fs1": 0.0825,
+    "delta_maskacc_fg_val": 0.0291,
+    "last_val_loss_fs0": 3.4259,
+    "last_val_loss_fs1": 3.0682,
+    "delta_last_val_loss": -0.3576999999999999
+  }
+}

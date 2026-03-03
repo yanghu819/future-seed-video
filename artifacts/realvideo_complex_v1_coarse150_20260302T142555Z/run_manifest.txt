@@ -1,0 +1,8 @@
+goal=coarse_compare_fs_on_realvideo_complex_v1
+metric_primary=maskacc_fg_val
+threshold_coarse=+0.008
+time_budget_min=90
+hard_constraints=single_gpu_only,change_only_future_seed
+failure_def=missing_metrics_or_nan_or_oom
+fixed=data=realvideo_complex_midfirst,vocab=32,seq_len=1728,mask=prefix:0.333333,n_layer=3,n_embd=192,head=32,device_bsz=24,batch=96,max_iters=150,eval_interval=30,maskacc_iters=50,seed=20260303,fg_threshold=2
+change=FUTURE_SEED(0|1),ALPHA(fs1=-2)

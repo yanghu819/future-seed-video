@@ -1,0 +1,6 @@
+goal=confirm_realvideo_complex_v1_multiseed
+metric_primary=maskacc_fg_val
+confirm_rule=avg_delta_fg>=0.015 and each_seed_delta_fg>=0
+fixed=data=realvideo_complex_midfirst,vocab=32,seq_len=1728,mask=prefix:0.333333,n_layer=3,n_embd=192,head=32,device_bsz=24,batch=96,max_iters=150,eval_interval=30,maskacc_iters=50,fg_threshold=2,alpha_fs1=-2
+seed_var=RANDOM_SEED
+seeds=20260304,20260305
