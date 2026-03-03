@@ -1,0 +1,3 @@
+task,seed,fs,alpha,max_iters,eval_interval,eval_iters,maskacc_iters,best_maskacc_val,best_maskacc_fg_val,last_val_loss,exit_code,log_path
+realvideo_complex_v1_scaleM_L4E256_ratio50_coarse120,20260312,0,0,120,20,10,20,0.0508,0.0561,3.4261,143,exp/realvideo_complex_v1_scaleM_L4E256_ratio50_coarse120_20260303T160109Z/logs/rvc1_scaleM_L4E256_seed20260312_fs0.log
+realvideo_complex_v1_scaleM_L4E256_ratio50_coarse120,20260312,1,-2,120,20,10,20,0.0508,0.0561,3.3939,143,exp/realvideo_complex_v1_scaleM_L4E256_ratio50_coarse120_20260303T160109Z/logs/rvc1_scaleM_L4E256_seed20260312_fs1.log

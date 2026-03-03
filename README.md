@@ -1,23 +1,35 @@
 # future-seed-video backup
 
-Last backup time: 2026-03-03 (local)
+Last backup time: 2026-03-04 (local)
 Source host: `connect.bjb2.seetacloud.com:19708`
 
-## Backed-up runs
+## Confirmed positive runs
 
-1. `realvideo_complex_v1_coarse150_20260302T142555Z`
-- key result: `delta_maskacc_fg_val = +0.0291`
-
-2. `realvideo_complex_v1_confirm2_20260302T182340Z`
-- key result: 2 seeds pass
+1. `realvideo_complex_v1_confirm2_20260302T182340Z`
+- 2 seeds pass
 - avg `delta_maskacc_fg_val = +0.0292`
 
-3. `realvideo_complex_v1_ratio50_coarse150_20260303T014055Z`
-- key result: `delta_maskacc_fg_val = +0.0402`
-
-4. `realvideo_complex_v1_ratio50_confirm_20260303T043332Z`
-- key result: 2 seeds pass
+2. `realvideo_complex_v1_ratio50_confirm_20260303T043332Z`
+- 2 seeds pass
 - avg `delta_maskacc_fg_val = +0.0408`
+
+3. `realvideo_complex_v1_ratio67_coarse150_20260303T132507Z`
+- coarse pass (early stop)
+- `delta_maskacc_fg_val = +0.0263`
+
+## Pruned / negative lines
+
+1. `realvideo_cross_v1_coarse120_20260303T082857Z`
+- cross-scene generalization line
+- avg `delta_maskacc_fg_val = 0.0000` (pruned)
+
+2. `realvideo_complex_v1_scaleM_L4E256_ratio50_coarse120_20260303T160109Z`
+- medium scale (`L4/E256`), truncated at step40 for FS0/FS1
+- `delta_maskacc_fg_val = 0.0000` (pruned)
+
+3. `realvideo_complex_v1_scaleL6E384_ratio50_coarse150_fit_20260303T154725Z`
+- large scale (`L6/E384`) too slow under `RWKV7_KERNEL=python`
+- hard-stop (`exit_code=143`)
 
 ## Content per run
 - `summary_rows.csv`

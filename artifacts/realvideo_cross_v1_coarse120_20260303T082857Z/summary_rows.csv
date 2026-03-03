@@ -1,0 +1,5 @@
+task,split,seed,fs,alpha,max_iters,eval_interval,maskacc_iters,best_maskacc_val,best_maskacc_fg_val,last_val_loss,log_path
+realvideo_cross_v1,a2b,20260308,0,0,120,30,50,0.0296,0.0199,5.4995,exp/realvideo_cross_v1_coarse120_20260303T082857Z/logs/cross_a2b_seed20260308_fs0.log
+realvideo_cross_v1,a2b,20260308,1,-2,120,30,50,0.0296,0.0199,5.4993,exp/realvideo_cross_v1_coarse120_20260303T082857Z/logs/cross_a2b_seed20260308_fs1.log
+realvideo_cross_v1,b2a,20260308,0,0,120,30,50,0.0005,0.0005,4.2567,exp/realvideo_cross_v1_coarse120_20260303T082857Z/logs/cross_b2a_seed20260308_fs0.log
+realvideo_cross_v1,b2a,20260308,1,-2,120,30,50,0.0005,0.0005,4.3275,exp/realvideo_cross_v1_coarse120_20260303T082857Z/logs/cross_b2a_seed20260308_fs1_rerun.log

@@ -1,0 +1,32 @@
+{
+  "a2b": {
+    "best_maskacc_val_fs0": 0.0296,
+    "best_maskacc_val_fs1": 0.0296,
+    "delta_maskacc_val": 0.0,
+    "best_maskacc_fg_val_fs0": 0.0199,
+    "best_maskacc_fg_val_fs1": 0.0199,
+    "delta_maskacc_fg_val": 0.0,
+    "last_val_loss_fs0": 5.4995,
+    "last_val_loss_fs1": 5.4993,
+    "delta_last_val_loss": -0.00020000000000042206,
+    "pass_coarse": false
+  },
+  "b2a": {
+    "best_maskacc_val_fs0": 0.0005,
+    "best_maskacc_val_fs1": 0.0005,
+    "delta_maskacc_val": 0.0,
+    "best_maskacc_fg_val_fs0": 0.0005,
+    "best_maskacc_fg_val_fs1": 0.0005,
+    "delta_maskacc_fg_val": 0.0,
+    "last_val_loss_fs0": 4.2567,
+    "last_val_loss_fs1": 4.3275,
+    "delta_last_val_loss": 0.07079999999999931,
+    "pass_coarse": false
+  },
+  "_summary": {
+    "avg_delta_maskacc_fg_val": 0.0,
+    "all_split_nonneg": true,
+    "hard_stop": true,
+    "hard_stop_reason": "b2a_fs1_stalled_after_step30_twice"
+  }
+}

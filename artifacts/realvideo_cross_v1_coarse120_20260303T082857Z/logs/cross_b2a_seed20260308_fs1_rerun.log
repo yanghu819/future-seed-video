@@ -1,0 +1,10 @@
+1.666008 M parameters
+1.666008 M trainable
+step 0: train loss 3.4965, val loss 3.4965, time 299.81 seconds
+maskacc_val 0.0001
+maskacc_fg_val 0.0000
+maskacc_fg_stats_val fg_masked_cnt=1036383 masked_cnt=1036800 fg_cnt=2072406 zero_fg_batches=0 used_batches=50 total_batches=50
+step 30: train loss 3.2580, val loss 4.3275, time 1246.82 seconds
+maskacc_val 0.0005
+maskacc_fg_val 0.0005
+maskacc_fg_stats_val fg_masked_cnt=1036306 masked_cnt=1036800 fg_cnt=2072416 zero_fg_batches=0 used_batches=50 total_batches=50

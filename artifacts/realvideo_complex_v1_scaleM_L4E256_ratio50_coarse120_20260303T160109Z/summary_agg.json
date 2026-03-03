@@ -1,0 +1,16 @@
+{
+  "realvideo_complex_v1_scaleM_L4E256_ratio50_coarse120": {
+    "best_maskacc_val_fs0": 0.0508,
+    "best_maskacc_val_fs1": 0.0508,
+    "delta_maskacc_val": 0.0,
+    "best_maskacc_fg_val_fs0": 0.0561,
+    "best_maskacc_fg_val_fs1": 0.0561,
+    "delta_maskacc_fg_val": 0.0,
+    "last_val_loss_fs0": 3.4261,
+    "last_val_loss_fs1": 3.3939,
+    "delta_last_val_loss": -0.032200000000000006,
+    "exit_code_fs0": 143,
+    "exit_code_fs1": 143,
+    "pass_coarse_rule": false
+  }
+}
