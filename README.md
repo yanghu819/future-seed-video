@@ -17,6 +17,10 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - full-budget single-seed recheck (new seed)
 - `delta_maskacc_fg_val = +0.0332` (pass)
 
+4. `realvideo_complex_v1_ratio50_full150_seed20260318_20260304T122457Z`
+- full-budget single-seed recheck (new seed)
+- `delta_maskacc_fg_val = +0.0405` (pass)
+
 ## Pruned / negative lines
 
 1. `realvideo_cross_v1_coarse120_20260303T082857Z`
@@ -45,7 +49,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Notes
 - `realvideo_complex_v1_ratio67_coarse150_20260303T132507Z` showed one-off coarse positive (`+0.0263`), but follow-up frozen rechecks did not hold.
-- `ratio50` is strongly budget-sensitive: 60-step runs show no gain, while full 150-step runs repeatedly show clear positive delta.
+- `ratio50` is budget-sensitive: 60-step runs show no gain, while full 150-step runs repeatedly show strong positive delta.
 
 ## Content per run
 - `summary_rows.csv`
