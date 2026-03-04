@@ -13,6 +13,10 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - 2 seeds pass
 - avg `delta_maskacc_fg_val = +0.0408`
 
+3. `realvideo_complex_v1_ratio50_full150_seed20260317_20260304T092527Z`
+- full-budget single-seed recheck (new seed)
+- `delta_maskacc_fg_val = +0.0332` (pass)
+
 ## Pruned / negative lines
 
 1. `realvideo_cross_v1_coarse120_20260303T082857Z`
@@ -29,7 +33,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 
 4. `realvideo_complex_v1_ratio50_confirmlite3_20260303T234917Z`
 - calibration seed + two new seeds: `20260306/20260315/20260316`
-- avg `delta_maskacc_fg_val = 0.0000` (failed confirm-like rule under 60-step lite budget)
+- avg `delta_maskacc_fg_val = 0.0000` (failed under 60-step lite budget)
 
 5. `realvideo_complex_v1_scaleM_L4E256_ratio50_coarse120_20260303T160109Z`
 - medium scale (`L4/E256`), compared at step40 for FS0/FS1
@@ -41,7 +45,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Notes
 - `realvideo_complex_v1_ratio67_coarse150_20260303T132507Z` showed one-off coarse positive (`+0.0263`), but follow-up frozen rechecks did not hold.
-- `ratio50` has historical full-budget positives (150-step confirm) and new lite-budget negatives (60-step confirmlite3). Treat this as budget-sensitive until a same-budget recheck is completed.
+- `ratio50` is strongly budget-sensitive: 60-step runs show no gain, while full 150-step runs repeatedly show clear positive delta.
 
 ## Content per run
 - `summary_rows.csv`
