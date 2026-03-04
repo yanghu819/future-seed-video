@@ -1,0 +1,7 @@
+task,seed,fs,alpha,max_iters,eval_interval,eval_iters,maskacc_iters,best_maskacc_val,best_maskacc_fg_val,last_val_loss,exit_code,log_path
+realvideo_complex_v1_ratio50_confirmlite3,20260306,0,0,60,20,10,20,0.0505,0.0504,3.4151,0,exp/realvideo_complex_v1_ratio50_confirmlite3_20260303T234917Z/logs/rvc1_ratio50_seed20260306_fs0.log
+realvideo_complex_v1_ratio50_confirmlite3,20260306,1,-2,60,20,10,20,0.0505,0.0504,3.4148,0,exp/realvideo_complex_v1_ratio50_confirmlite3_20260303T234917Z/logs/rvc1_ratio50_seed20260306_fs1.log
+realvideo_complex_v1_ratio50_confirmlite3,20260315,0,0,60,20,10,20,0.0505,0.0504,3.4151,0,exp/realvideo_complex_v1_ratio50_confirmlite3_20260303T234917Z/logs/rvc1_ratio50_seed20260315_fs0.log
+realvideo_complex_v1_ratio50_confirmlite3,20260315,1,-2,60,20,10,20,0.0505,0.0504,3.4148,0,exp/realvideo_complex_v1_ratio50_confirmlite3_20260303T234917Z/logs/rvc1_ratio50_seed20260315_fs1.log
+realvideo_complex_v1_ratio50_confirmlite3,20260316,0,0,60,20,10,20,0.0505,0.0504,3.4151,0,exp/realvideo_complex_v1_ratio50_confirmlite3_20260303T234917Z/logs/rvc1_ratio50_seed20260316_fs0.log
+realvideo_complex_v1_ratio50_confirmlite3,20260316,1,-2,60,20,10,20,0.0505,0.0504,3.4148,0,exp/realvideo_complex_v1_ratio50_confirmlite3_20260303T234917Z/logs/rvc1_ratio50_seed20260316_fs1.log

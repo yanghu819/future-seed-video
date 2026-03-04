@@ -1,0 +1,6 @@
+goal=P5_ratio50_confirmlite3_calibrated
+metric_primary=maskacc_fg_val
+threshold_confirm_like=avg_delta_fg>=0.015 and each_seed_delta_fg>=0
+fixed=data=realvideo_complex_midfirst,vocab=32,seq_len=1728,mask=prefix:0.5,n_layer=3,n_embd=192,head=32,device_bsz=24,batch=96,max_iters=60,eval_interval=20,eval_iters=10,maskacc_iters=20,fg_threshold=2
+change=FUTURE_SEED(0|1),ALPHA(fs1=-2),RANDOM_SEED in {20260306,20260315,20260316}
+failure=oom_or_nan_or_missing_metric
