@@ -1,0 +1,17 @@
+{
+  "realvideo_complex_v1_ratio50_full150_multiseed": {
+    "n_seeds": 5,
+    "seeds": [
+      20260306,
+      20260307,
+      20260317,
+      20260318,
+      20260319
+    ],
+    "avg_delta_maskacc_fg_val": 0.038900000000000004,
+    "avg_delta_maskacc_val": 0.03972,
+    "avg_delta_last_val_loss": -0.37518,
+    "all_seed_delta_fg_nonneg": true,
+    "pass_rule_avg_delta_fg_ge_0p015": true
+  }
+}

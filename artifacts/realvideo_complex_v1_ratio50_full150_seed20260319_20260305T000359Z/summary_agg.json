@@ -1,0 +1,16 @@
+{
+  "realvideo_complex_v1_ratio50_full150_seed20260319": {
+    "best_maskacc_val_fs0": 0.049,
+    "best_maskacc_val_fs1": 0.09,
+    "delta_maskacc_val": 0.040999999999999995,
+    "best_maskacc_fg_val_fs0": 0.0526,
+    "best_maskacc_fg_val_fs1": 0.0918,
+    "delta_maskacc_fg_val": 0.039200000000000006,
+    "last_val_loss_fs0": 3.4222,
+    "last_val_loss_fs1": 3.0514,
+    "delta_last_val_loss": -0.3708,
+    "exit_code_fs0": 0,
+    "exit_code_fs1": 0,
+    "pass_coarse_rule": true
+  }
+}

@@ -1,6 +1,6 @@
 # future-seed-video backup
 
-Last backup time: 2026-03-04 (local)
+Last backup time: 2026-03-05 (local)
 Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Confirmed positive runs
@@ -20,6 +20,15 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 4. `realvideo_complex_v1_ratio50_full150_seed20260318_20260304T122457Z`
 - full-budget single-seed recheck (new seed)
 - `delta_maskacc_fg_val = +0.0405` (pass)
+
+5. `realvideo_complex_v1_ratio50_full150_seed20260319_20260305T000359Z`
+- full-budget single-seed recheck (new seed)
+- `delta_maskacc_fg_val = +0.0392` (pass)
+
+6. `realvideo_complex_v1_ratio50_full150_multiseed_agg_20260305T030102Z`
+- aggregated comparable full150 seeds: `20260306/20260307/20260317/20260318/20260319`
+- avg `delta_maskacc_fg_val = +0.0389`
+- all seed deltas non-negative
 
 ## Pruned / negative lines
 

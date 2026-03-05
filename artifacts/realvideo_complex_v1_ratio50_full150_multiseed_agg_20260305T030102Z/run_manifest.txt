@@ -1,0 +1,5 @@
+goal=aggregate_ratio50_full150_multiseed
+metric_primary=maskacc_fg_val
+rule=avg_delta_fg>=0.015 and each_seed_delta_fg>=0
+fixed=max_iters=150,eval_interval=30,maskacc_iters=50,ratio=0.5,model=L3E192H32
+n_seeds=5
