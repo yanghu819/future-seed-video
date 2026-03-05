@@ -1,0 +1,69 @@
+{
+  "realvideo_complex_v1_ratio50_budgetcurve_seed20260320": {
+    "seed": 20260320,
+    "curve": [
+      {
+        "budget": 60,
+        "best_maskacc_fg_val_fs0": 0.048,
+        "best_maskacc_fg_val_fs1": 0.048,
+        "delta_maskacc_fg_val": 0.0,
+        "best_maskacc_val_fs0": 0.0505,
+        "best_maskacc_val_fs1": 0.0505,
+        "delta_maskacc_val": 0.0,
+        "last_val_loss_fs0": 3.4277,
+        "last_val_loss_fs1": 3.4275,
+        "delta_last_val_loss": -0.00019999999999997797,
+        "exit_code_fs0": 0,
+        "exit_code_fs1": 0,
+        "pass_at_budget": false
+      },
+      {
+        "budget": 90,
+        "best_maskacc_fg_val_fs0": 0.0504,
+        "best_maskacc_fg_val_fs1": 0.0504,
+        "delta_maskacc_fg_val": 0.0,
+        "best_maskacc_val_fs0": 0.0505,
+        "best_maskacc_val_fs1": 0.0505,
+        "delta_maskacc_val": 0.0,
+        "last_val_loss_fs0": 3.4058,
+        "last_val_loss_fs1": 3.3859,
+        "delta_last_val_loss": -0.01990000000000025,
+        "exit_code_fs0": 0,
+        "exit_code_fs1": 0,
+        "pass_at_budget": false
+      },
+      {
+        "budget": 120,
+        "best_maskacc_fg_val_fs0": 0.0548,
+        "best_maskacc_fg_val_fs1": 0.0789,
+        "delta_maskacc_fg_val": 0.024099999999999996,
+        "best_maskacc_val_fs0": 0.0505,
+        "best_maskacc_val_fs1": 0.0716,
+        "delta_maskacc_val": 0.021099999999999994,
+        "last_val_loss_fs0": 3.4122,
+        "last_val_loss_fs1": 3.0978,
+        "delta_last_val_loss": -0.3144,
+        "exit_code_fs0": 0,
+        "exit_code_fs1": 0,
+        "pass_at_budget": true
+      },
+      {
+        "budget": 150,
+        "best_maskacc_fg_val_fs0": 0.0548,
+        "best_maskacc_fg_val_fs1": 0.0902,
+        "delta_maskacc_fg_val": 0.0354,
+        "best_maskacc_val_fs0": 0.0555,
+        "best_maskacc_val_fs1": 0.0925,
+        "delta_maskacc_val": 0.037,
+        "last_val_loss_fs0": 3.4348,
+        "last_val_loss_fs1": 3.072,
+        "delta_last_val_loss": -0.3628,
+        "exit_code_fs0": 0,
+        "exit_code_fs1": 0,
+        "pass_at_budget": true
+      }
+    ],
+    "first_budget_pass_delta_fg_ge_0p015": 120,
+    "all_runs_exit_zero": true
+  }
+}

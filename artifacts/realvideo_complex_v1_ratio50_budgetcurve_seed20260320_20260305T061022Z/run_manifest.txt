@@ -1,0 +1,7 @@
+goal=P7_ratio50_budget_boundary_curve
+metric_primary=maskacc_fg_val
+threshold_target=delta_fg>=0.015
+fixed=data=realvideo_complex_midfirst,vocab=32,seq_len=1728,mask=prefix:0.5,n_layer=3,n_embd=192,head=32,device_bsz=24,batch=96,eval_interval=30,eval_iters=10,maskacc_iters=20,fg_threshold=2,random_seed=20260320
+grid=max_iters in {60,90,120,150}
+change=FUTURE_SEED(0|1),ALPHA(fs1=-2)
+failure=oom_or_nan_or_missing_metric

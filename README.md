@@ -30,6 +30,11 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - avg `delta_maskacc_fg_val = +0.0389`
 - all seed deltas non-negative
 
+7. `realvideo_complex_v1_ratio50_budgetcurve_seed20260320_20260305T061022Z`
+- budget boundary curve on one new seed (`60/90/120/150`)
+- first budget passing `delta_fg>=0.015` is **120**
+- deltas: `60:+0.0000, 90:+0.0000, 120:+0.0241, 150:+0.0354`
+
 ## Pruned / negative lines
 
 1. `realvideo_cross_v1_coarse120_20260303T082857Z`
@@ -58,7 +63,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Notes
 - `realvideo_complex_v1_ratio67_coarse150_20260303T132507Z` showed one-off coarse positive (`+0.0263`), but follow-up frozen rechecks did not hold.
-- `ratio50` is budget-sensitive: 60-step runs show no gain, while full 150-step runs repeatedly show strong positive delta.
+- `ratio50` is budget-sensitive: 60/90-step runs show no gain, while 120/150-step runs show clear positive delta.
 
 ## Content per run
 - `summary_rows.csv`

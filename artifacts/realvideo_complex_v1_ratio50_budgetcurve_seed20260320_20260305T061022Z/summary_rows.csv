@@ -1,0 +1,9 @@
+budget,seed,fs,alpha,max_iters,eval_interval,eval_iters,maskacc_iters,best_maskacc_val,best_maskacc_fg_val,last_val_loss,exit_code,log_path
+60,20260320,0,0,60,30,10,20,0.0505,0.0480,3.4277,0,exp/realvideo_complex_v1_ratio50_budgetcurve_seed20260320_20260305T061022Z/logs/rvc1_ratio50_budget60_seed20260320_fs0.log
+60,20260320,1,-2,60,30,10,20,0.0505,0.0480,3.4275,0,exp/realvideo_complex_v1_ratio50_budgetcurve_seed20260320_20260305T061022Z/logs/rvc1_ratio50_budget60_seed20260320_fs1.log
+90,20260320,0,0,90,30,10,20,0.0505,0.0504,3.4058,0,exp/realvideo_complex_v1_ratio50_budgetcurve_seed20260320_20260305T061022Z/logs/rvc1_ratio50_budget90_seed20260320_fs0.log
+90,20260320,1,-2,90,30,10,20,0.0505,0.0504,3.3859,0,exp/realvideo_complex_v1_ratio50_budgetcurve_seed20260320_20260305T061022Z/logs/rvc1_ratio50_budget90_seed20260320_fs1.log
+120,20260320,0,0,120,30,10,20,0.0505,0.0548,3.4122,0,exp/realvideo_complex_v1_ratio50_budgetcurve_seed20260320_20260305T061022Z/logs/rvc1_ratio50_budget120_seed20260320_fs0.log
+120,20260320,1,-2,120,30,10,20,0.0716,0.0789,3.0978,0,exp/realvideo_complex_v1_ratio50_budgetcurve_seed20260320_20260305T061022Z/logs/rvc1_ratio50_budget120_seed20260320_fs1.log
+150,20260320,0,0,150,30,10,20,0.0555,0.0548,3.4348,0,exp/realvideo_complex_v1_ratio50_budgetcurve_seed20260320_20260305T061022Z/logs/rvc1_ratio50_budget150_seed20260320_fs0.log
+150,20260320,1,-2,150,30,10,20,0.0925,0.0902,3.0720,0,exp/realvideo_complex_v1_ratio50_budgetcurve_seed20260320_20260305T061022Z/logs/rvc1_ratio50_budget150_seed20260320_fs1.log
