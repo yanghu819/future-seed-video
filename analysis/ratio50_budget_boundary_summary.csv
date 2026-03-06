@@ -1,0 +1,5 @@
+budget,evidence_tier,n_seeds,avg_delta_maskacc_fg_val,min_delta_maskacc_fg_val,max_delta_maskacc_fg_val,protocol_note
+60,supporting,4,0.0000,0.0000,0.0000,"same task/model/mask; eval_interval differs between runs"
+90,strict,3,0.0000,0.0000,0.0000,"same task/model/mask/eval cadence across seeds 20260320/21/22"
+120,strict,3,0.0249,0.0241,0.0254,"same task/model/mask/eval cadence across seeds 20260320/21/22"
+150,supporting,5,0.0389,0.0332,0.0414,"same task/model/mask; maskacc_iters=50 in full-budget aggregate"

@@ -72,6 +72,10 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - `ratio50` is budget-sensitive: 60/90-step runs show no gain, while 120/150-step runs show clear positive delta.
 - The 90->120 transition is now supported by both single-seed and multi-seed evidence.
 
+## Analysis Docs
+- [BUDGET_BOUNDARY.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/BUDGET_BOUNDARY.md): formal note for the `ratio50` budget threshold claim.
+- [ratio50_budget_boundary_summary.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/ratio50_budget_boundary_summary.csv): compact numeric table behind that note.
+
 ## Content per run
 - `summary_rows.csv`
 - `summary_agg.json`
