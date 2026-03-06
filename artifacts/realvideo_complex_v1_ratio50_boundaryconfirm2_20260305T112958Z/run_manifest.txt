@@ -1,0 +1,7 @@
+goal=P8_ratio50_boundary_confirm_multiseed
+metric_primary=maskacc_fg_val
+rule=budget90_expected_no_gain_and_budget120_expected_gain_ge_0p015
+fixed=data=realvideo_complex_midfirst,vocab=32,seq_len=1728,mask=prefix:0.5,n_layer=3,n_embd=192,head=32,device_bsz=24,batch=96,eval_interval=30,eval_iters=10,maskacc_iters=20,fg_threshold=2
+seeds=20260321,20260322
+budgets=90,120
+change=FUTURE_SEED(0|1),ALPHA(fs1=-2)

@@ -1,0 +1,66 @@
+{
+  "realvideo_complex_v1_ratio50_boundaryconfirm2": {
+    "pairs": [
+      {
+        "seed": 20260321,
+        "budget": 90,
+        "delta_maskacc_fg_val": 0.0,
+        "delta_maskacc_val": 0.0,
+        "delta_last_val_loss": -0.022800000000000153,
+        "best_maskacc_fg_val_fs0": 0.0504,
+        "best_maskacc_fg_val_fs1": 0.0504,
+        "exit_code_fs0": 0,
+        "exit_code_fs1": 0
+      },
+      {
+        "seed": 20260321,
+        "budget": 120,
+        "delta_maskacc_fg_val": 0.025099999999999997,
+        "delta_maskacc_val": 0.0242,
+        "delta_last_val_loss": -0.31919999999999993,
+        "best_maskacc_fg_val_fs0": 0.0548,
+        "best_maskacc_fg_val_fs1": 0.0799,
+        "exit_code_fs0": 0,
+        "exit_code_fs1": 0
+      },
+      {
+        "seed": 20260322,
+        "budget": 90,
+        "delta_maskacc_fg_val": 0.0,
+        "delta_maskacc_val": 0.0,
+        "delta_last_val_loss": -0.020999999999999908,
+        "best_maskacc_fg_val_fs0": 0.0504,
+        "best_maskacc_fg_val_fs1": 0.0504,
+        "exit_code_fs0": 0,
+        "exit_code_fs1": 0
+      },
+      {
+        "seed": 20260322,
+        "budget": 120,
+        "delta_maskacc_fg_val": 0.025399999999999992,
+        "delta_maskacc_val": 0.024300000000000002,
+        "delta_last_val_loss": -0.31590000000000007,
+        "best_maskacc_fg_val_fs0": 0.0548,
+        "best_maskacc_fg_val_fs1": 0.0802,
+        "exit_code_fs0": 0,
+        "exit_code_fs1": 0
+      }
+    ],
+    "by_budget": {
+      "90": {
+        "n": 2,
+        "avg_delta_maskacc_fg_val": 0.0,
+        "all_nonneg": true,
+        "all_exit_zero": true
+      },
+      "120": {
+        "n": 2,
+        "avg_delta_maskacc_fg_val": 0.025249999999999995,
+        "all_nonneg": true,
+        "all_exit_zero": true
+      }
+    },
+    "pass_budget90_no_gain": true,
+    "pass_budget120_gain": true
+  }
+}

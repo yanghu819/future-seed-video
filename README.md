@@ -1,6 +1,6 @@
 # future-seed-video backup
 
-Last backup time: 2026-03-05 (local)
+Last backup time: 2026-03-06 (local)
 Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Confirmed positive runs
@@ -35,6 +35,12 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - first budget passing `delta_fg>=0.015` is **120**
 - deltas: `60:+0.0000, 90:+0.0000, 120:+0.0241, 150:+0.0354`
 
+8. `realvideo_complex_v1_ratio50_boundaryconfirm2_20260305T112958Z`
+- multi-seed boundary confirmation on new seeds `20260321/20260322`
+- budget `90`: avg `delta_maskacc_fg_val = +0.0000`
+- budget `120`: avg `delta_maskacc_fg_val = +0.02525`
+- confirms the gain transition happens between **90** and **120**
+
 ## Pruned / negative lines
 
 1. `realvideo_cross_v1_coarse120_20260303T082857Z`
@@ -64,6 +70,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 ## Notes
 - `realvideo_complex_v1_ratio67_coarse150_20260303T132507Z` showed one-off coarse positive (`+0.0263`), but follow-up frozen rechecks did not hold.
 - `ratio50` is budget-sensitive: 60/90-step runs show no gain, while 120/150-step runs show clear positive delta.
+- The 90->120 transition is now supported by both single-seed and multi-seed evidence.
 
 ## Content per run
 - `summary_rows.csv`
