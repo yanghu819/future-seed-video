@@ -93,6 +93,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 ## Analysis Docs
 - [BUDGET_BOUNDARY.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/BUDGET_BOUNDARY.md): formal note for the `ratio50` budget threshold claim.
 - [TASK_CANDIDATES.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/TASK_CANDIDATES.md): ranked list of likely next effective tasks.
+- [task_candidate_scoreboard.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task_candidate_scoreboard.csv): sortable evidence table for ready-now and derived candidate tasks.
 - [ratio50_budget_boundary_summary.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/ratio50_budget_boundary_summary.csv): compact numeric table behind that note.
 - [ratio50_budget_boundary_caption.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/ratio50_budget_boundary_caption.md): paper-style caption text for the budget figure.
 - [ratio50_budget_boundary.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/ratio50_budget_boundary.png): raster figure for slides/docs.
@@ -104,3 +105,8 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - `summary_agg.json`
 - `run_manifest.txt` (if present on remote)
 - `logs/*.log`
+
+## Current Search Focus
+- keep extending the already-strong `task5_midframe` family into more realistic real-video variants
+- prioritize `task5_realvideo_gap4_long_v2` first, then `task5_realvideo_long`
+- treat `realvideo_square_migration` as the next high-ROI derived branch because MNIST already showed that `prefix-source -> square` transfer is better than simply adding more steps
