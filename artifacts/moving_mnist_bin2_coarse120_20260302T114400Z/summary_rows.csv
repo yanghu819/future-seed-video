@@ -1,0 +1,3 @@
+task,fs,alpha,max_iters,eval_interval,maskacc_iters,best_maskacc_val,best_maskacc_fg_val,last_val_loss,log_path
+moving_mnist_bin2_interp,0,0,120,20,50,0.8811,0.0000,0.4010,exp/moving_mnist_bin2_coarse120_20260302T114400Z/logs/moving_mnist_bin2_fs0.log
+moving_mnist_bin2_interp,1,0,120,20,50,0.8811,0.0000,0.4010,exp/moving_mnist_bin2_coarse120_20260302T114400Z/logs/moving_mnist_bin2_fs1.log

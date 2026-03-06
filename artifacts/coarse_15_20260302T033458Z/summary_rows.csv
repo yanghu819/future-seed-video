@@ -1,0 +1,5 @@
+task,fs,alpha,seq_len,mask_mode,mask_key,mask_value,max_iters,eval_interval,maskacc_iters,best_maskacc_val,best_maskacc_fg_val,last_val_loss,log_path
+task1_left_half,0,0,256,prefix,BIN_PREFIX_RATIO,0.5,120,20,50,0.1092,0.1105,2.6441,/root/autodl-tmp/experiments/future-seed-main/rwkv-diff-future-seed/exp/coarse_15_20260302T033458Z/logs/task1_left_half_fs0.log
+task1_left_half,1,-2,256,prefix,BIN_PREFIX_RATIO,0.5,120,20,50,0.1092,0.1105,2.6090,/root/autodl-tmp/experiments/future-seed-main/rwkv-diff-future-seed/exp/coarse_15_20260302T033458Z/logs/task1_left_half_fs1.log
+task5_midframe,0,0,768,prefix,BIN_PREFIX_RATIO,0.333333,120,20,50,0.1091,0.1104,2.6444,/root/autodl-tmp/experiments/future-seed-main/rwkv-diff-future-seed/exp/coarse_15_20260302T033458Z/logs/task5_midframe_fs0.log
+task5_midframe,1,-2,768,prefix,BIN_PREFIX_RATIO,0.333333,120,20,50,0.1109,0.1135,2.5673,/root/autodl-tmp/experiments/future-seed-main/rwkv-diff-future-seed/exp/coarse_15_20260302T033458Z/logs/task5_midframe_fs1.log

@@ -1,0 +1,13 @@
+{
+  "task5_midframe": {
+    "best_maskacc_val_fs0": 0.1087,
+    "best_maskacc_val_fs1": 0.3338,
+    "delta_maskacc_val": 0.22509999999999997,
+    "best_maskacc_fg_val_fs0": 0.11,
+    "best_maskacc_fg_val_fs1": 0.3286,
+    "delta_maskacc_fg_val": 0.21860000000000002,
+    "last_val_loss_fs0": 2.6236,
+    "last_val_loss_fs1": 1.8439,
+    "delta_last_val_loss": -0.7797000000000001
+  }
+}

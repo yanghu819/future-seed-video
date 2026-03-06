@@ -1,0 +1,24 @@
+{
+  "task1_left_half": {
+    "best_maskacc_val_fs0": 0.1092,
+    "best_maskacc_val_fs1": 0.1092,
+    "delta_maskacc_val": 0.0,
+    "best_maskacc_fg_val_fs0": 0.1105,
+    "best_maskacc_fg_val_fs1": 0.1105,
+    "delta_maskacc_fg_val": 0.0,
+    "last_val_loss_fs0": 2.6441,
+    "last_val_loss_fs1": 2.609,
+    "delta_last_val_loss": -0.03509999999999991
+  },
+  "task5_midframe": {
+    "best_maskacc_val_fs0": 0.1091,
+    "best_maskacc_val_fs1": 0.1109,
+    "delta_maskacc_val": 0.001799999999999996,
+    "best_maskacc_fg_val_fs0": 0.1104,
+    "best_maskacc_fg_val_fs1": 0.1135,
+    "delta_maskacc_fg_val": 0.0031000000000000055,
+    "last_val_loss_fs0": 2.6444,
+    "last_val_loss_fs1": 2.5673,
+    "delta_last_val_loss": -0.07710000000000017
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "task2_square_hole": {
+    "best_maskacc_val_fs0": 0.2377,
+    "best_maskacc_val_fs1": 0.2465,
+    "delta_maskacc_val": 0.008800000000000002,
+    "best_maskacc_fg_val_fs0": 0.2358,
+    "best_maskacc_fg_val_fs1": 0.2439,
+    "delta_maskacc_fg_val": 0.008099999999999996,
+    "last_val_loss_fs0": 2.1416,
+    "last_val_loss_fs1": 2.0964,
+    "delta_last_val_loss": -0.04519999999999991
+  }
+}

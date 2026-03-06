@@ -1,0 +1,12 @@
+{
+  "realvideo_complex_v1_ratio50_fullcfg180_seed20260318": {
+    "seed": 20260318,
+    "best_fg_fs0": 0.0538,
+    "best_fg_fs1": 0.0964,
+    "delta_fg_180": 0.0426,
+    "ref_best_fg_fs0_150": 0.0526,
+    "ref_best_fg_fs1_150": 0.0931,
+    "ref_delta_fg_150": 0.0405,
+    "delta_vs_ref_delta": 0.0020999999999999977
+  }
+}

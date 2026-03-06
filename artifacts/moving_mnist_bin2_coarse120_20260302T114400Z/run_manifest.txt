@@ -1,0 +1,8 @@
+goal=coarse_compare_fs_on_moving_mnist_bin2_interp
+metric_primary=maskacc_fg_val
+threshold_coarse=+0.008
+time_budget_min=60
+hard_constraints=single_gpu_only,change_only_future_seed
+failure_def=missing_metrics_or_nan_or_oom
+fixed=data=moving_mnist_bin2_midfirst,vocab=2,seq_len=768,mask=prefix:0.333333,n_layer=2,n_embd=128,head=32,device_bsz=64,batch=128,max_iters=120,eval_interval=20,maskacc_iters=50,seed=20260302
+change=FUTURE_SEED(0|1),ALPHA(fs1=0)

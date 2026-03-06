@@ -50,6 +50,13 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - compared to the same-seed `150-step` reference (`+0.0354`), this is `+0.0078` higher
 - treat this as supportive, not final: step-extension still needs a more directly comparable rerun on the full150 setting
 
+2. `realvideo_complex_v1_ratio50_fullcfg180_seed20260318_20260306T061017Z`
+- directly comparable extension of `full150 seed20260318` to `180` steps
+- `best_fg_fs0 = 0.0538`, `best_fg_fs1 = 0.0964`
+- `delta_fg_180 = +0.0426`
+- compared to the `150-step` reference (`+0.0405`), this is only `+0.0021` higher
+- current interpretation: `180` is at most a small marginal gain over `150`, not a new regime change
+
 ## Pruned / negative lines
 
 1. `realvideo_cross_v1_coarse120_20260303T082857Z`
@@ -81,9 +88,11 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - `ratio50` is budget-sensitive: 60/90-step runs show no gain, while 120/150-step runs show clear positive delta.
 - The 90->120 transition is now supported by both single-seed and multi-seed evidence.
 - Checkpoint continuation is not a valid proxy for longer budgets on this line; a `120->150` resume probe underestimates FS1 versus scratch.
+- Extending from `150` to `180` looks like, at best, a small marginal gain. This is not currently a high-ROI direction compared with new task discovery.
 
 ## Analysis Docs
 - [BUDGET_BOUNDARY.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/BUDGET_BOUNDARY.md): formal note for the `ratio50` budget threshold claim.
+- [TASK_CANDIDATES.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/TASK_CANDIDATES.md): ranked list of likely next effective tasks.
 - [ratio50_budget_boundary_summary.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/ratio50_budget_boundary_summary.csv): compact numeric table behind that note.
 - [ratio50_budget_boundary_caption.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/ratio50_budget_boundary_caption.md): paper-style caption text for the budget figure.
 - [ratio50_budget_boundary.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/ratio50_budget_boundary.png): raster figure for slides/docs.

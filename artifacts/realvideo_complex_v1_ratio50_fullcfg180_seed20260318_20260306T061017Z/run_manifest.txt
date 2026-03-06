@@ -1,0 +1,9 @@
+goal=P11_ratio50_fullcfg180_single_seed
+metric_primary=maskacc_fg_val
+threshold_reference=compare_against_existing_full150_seed20260318
+threshold_success=delta_fg_180 >= delta_fg_150 or clear_plateau_if_not
+hard_constraints=only_change_max_iters_from_150_to_180; frozen full150 config
+fixed=data=realvideo_complex_midfirst,vocab=32,seq_len=1728,mask=prefix:0.5,n_layer=3,n_embd=192,head=32,device_bsz=24,batch=96,max_iters=180,eval_interval=30,maskacc_iters=50,fg_threshold=2,random_seed=20260318
+change=FUTURE_SEED(0|1),ALPHA(fs1=-2)
+ref_delta_fg_150=0.0405
+failure=oom_or_nan_or_missing_metric

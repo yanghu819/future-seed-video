@@ -1,0 +1,3 @@
+seed,fs,max_iters,best_maskacc_val,best_maskacc_fg_val,last_val_loss,exit_code,log_path
+20260318,0,180,0.0493,0.0538,3.4197,0,exp/realvideo_complex_v1_ratio50_fullcfg180_seed20260318_20260306T061017Z/logs/fs0.log
+20260318,1,180,0.0878,0.0964,3.0074,0,exp/realvideo_complex_v1_ratio50_fullcfg180_seed20260318_20260306T061017Z/logs/fs1.log

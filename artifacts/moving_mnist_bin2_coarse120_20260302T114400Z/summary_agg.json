@@ -1,0 +1,13 @@
+{
+  "moving_mnist_bin2_interp": {
+    "best_maskacc_val_fs0": 0.8811,
+    "best_maskacc_val_fs1": 0.8811,
+    "delta_maskacc_val": 0.0,
+    "best_maskacc_fg_val_fs0": 0.0,
+    "best_maskacc_fg_val_fs1": 0.0,
+    "delta_maskacc_fg_val": 0.0,
+    "last_val_loss_fs0": 0.401,
+    "last_val_loss_fs1": 0.401,
+    "delta_last_val_loss": 0.0
+  }
+}

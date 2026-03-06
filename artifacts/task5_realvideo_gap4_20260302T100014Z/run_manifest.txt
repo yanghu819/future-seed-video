@@ -1,0 +1,7 @@
+goal=quick_coarse_real_video_gap4
+metric_primary=maskacc_fg_val
+threshold_coarse=+0.008
+time_budget_min=45
+hard_constraints=single_gpu_only,freeze_all_except_future_seed
+failure_def=missing_metrics_or_nan_or_oom
+fixed=data=realtriplet_midfirst_gap4,vocab=16,seq_len=768,mask=prefix:0.333333,n_layer=2,n_embd=128,head=32,device_bsz=64,batch=128,max_iters=120,eval_interval=20,maskacc_iters=50,seed=20260302

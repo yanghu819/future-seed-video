@@ -1,0 +1,31 @@
+0.55758 M parameters
+0.55758 M trainable
+step 0: train loss 2.8332, val loss 2.8332, time 89.08 seconds
+maskacc_val 0.0043
+maskacc_fg_val 0.0000
+maskacc_fg_stats_val fg_masked_cnt=812511 masked_cnt=816000 fg_cnt=2446950 zero_fg_batches=0 used_batches=50 total_batches=50
+step 20: train loss 2.4175, val loss 2.4479, time 256.20 seconds
+maskacc_val 0.2526
+maskacc_fg_val 0.2544
+maskacc_fg_stats_val fg_masked_cnt=812511 masked_cnt=816000 fg_cnt=2446950 zero_fg_batches=0 used_batches=50 total_batches=50
+step 40: train loss 2.2904, val loss 2.3349, time 423.17 seconds
+maskacc_val 0.2526
+maskacc_fg_val 0.2544
+maskacc_fg_stats_val fg_masked_cnt=812511 masked_cnt=816000 fg_cnt=2446950 zero_fg_batches=0 used_batches=50 total_batches=50
+step 60: train loss 2.2446, val loss 2.2921, time 591.23 seconds
+maskacc_val 0.2526
+maskacc_fg_val 0.2544
+maskacc_fg_stats_val fg_masked_cnt=812511 masked_cnt=816000 fg_cnt=2446950 zero_fg_batches=0 used_batches=50 total_batches=50
+step 80: train loss 2.1867, val loss 2.2296, time 758.05 seconds
+maskacc_val 0.2526
+maskacc_fg_val 0.2544
+maskacc_fg_stats_val fg_masked_cnt=812511 masked_cnt=816000 fg_cnt=2446950 zero_fg_batches=0 used_batches=50 total_batches=50
+step 100: train loss 2.1211, val loss 2.1609, time 925.80 seconds
+maskacc_val 0.2526
+maskacc_fg_val 0.2544
+maskacc_fg_stats_val fg_masked_cnt=812511 masked_cnt=816000 fg_cnt=2446950 zero_fg_batches=0 used_batches=50 total_batches=50
+step 119: train loss 2.0922, val loss 2.1303, time 1090.89 seconds
+maskacc_val 0.2526
+maskacc_fg_val 0.2544
+maskacc_fg_stats_val fg_masked_cnt=812511 masked_cnt=816000 fg_cnt=2446950 zero_fg_batches=0 used_batches=50 total_batches=50
+Total training time: 1116.59 seconds
