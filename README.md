@@ -41,6 +41,15 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - budget `120`: avg `delta_maskacc_fg_val = +0.02525`
 - confirms the gain transition happens between **90** and **120**
 
+## Step-Extension Probes
+
+1. `realvideo_complex_v1_ratio50_scratch180_seed20260320_20260306T040234Z`
+- exploratory longer-budget scratch rerun on the `budgetcurve` line (`maskacc_iters=20`)
+- `best_fg_fs0 = 0.0548`, `best_fg_fs1 = 0.0980`
+- `delta_fg_180 = +0.0432`
+- compared to the same-seed `150-step` reference (`+0.0354`), this is `+0.0078` higher
+- treat this as supportive, not final: step-extension still needs a more directly comparable rerun on the full150 setting
+
 ## Pruned / negative lines
 
 1. `realvideo_cross_v1_coarse120_20260303T082857Z`
@@ -71,6 +80,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - `realvideo_complex_v1_ratio67_coarse150_20260303T132507Z` showed one-off coarse positive (`+0.0263`), but follow-up frozen rechecks did not hold.
 - `ratio50` is budget-sensitive: 60/90-step runs show no gain, while 120/150-step runs show clear positive delta.
 - The 90->120 transition is now supported by both single-seed and multi-seed evidence.
+- Checkpoint continuation is not a valid proxy for longer budgets on this line; a `120->150` resume probe underestimates FS1 versus scratch.
 
 ## Analysis Docs
 - [BUDGET_BOUNDARY.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/BUDGET_BOUNDARY.md): formal note for the `ratio50` budget threshold claim.

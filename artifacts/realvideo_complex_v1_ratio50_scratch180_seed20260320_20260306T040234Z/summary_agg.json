@@ -1,0 +1,12 @@
+{
+  "realvideo_complex_v1_ratio50_scratch180_seed20260320": {
+    "seed": 20260320,
+    "best_fg_fs0": 0.0548,
+    "best_fg_fs1": 0.098,
+    "delta_fg_180": 0.0432,
+    "ref_best_fg_fs0_150": 0.0548,
+    "ref_best_fg_fs1_150": 0.0902,
+    "ref_delta_fg_150": 0.0354,
+    "delta_vs_ref_delta": 0.007800000000000001
+  }
+}
