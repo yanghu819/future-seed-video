@@ -131,8 +131,13 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - [ratio50_budget_boundary.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/ratio50_budget_boundary.svg): vector figure for paper/export.
 - [task5_realvideo_gap4_long_v2_curves.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_realvideo_gap4_long_v2_curves.png): training-curve comparison of `FS0` vs `FS1` on the strong `gap4` real-video task.
 - [task5_realvideo_gap4_long_v2_curves.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_realvideo_gap4_long_v2_curves.svg): vector version of that curve figure.
+- [task5_gap_family_summary.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task5_gap_family_summary.csv): compact numeric table for the confirmed real-video `task5` family through `gap24`.
+- [task5_gap_family_caption.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task5_gap_family_caption.md): paper-style caption text for the family-level figure.
+- [task5_gap_family.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_gap_family.png): family-level bar figure for `adjacent/gap4/gap8/gap16/gap24`.
+- [task5_gap_family.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_gap_family.svg): vector version of that family-level figure.
 - [plot_ratio50_budget_boundary.py](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/plot_ratio50_budget_boundary.py): no-dependency plot generator using `Pillow`.
 - [plot_task5_gap4_curves.py](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/plot_task5_gap4_curves.py): no-dependency curve plot generator for the strong `gap4` task.
+- [plot_task5_gap_family.py](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/plot_task5_gap_family.py): no-dependency figure generator for the confirmed real-video `task5` gap ladder.
 - [task5_gap_watchdog.py](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task5_gap_watchdog.py): remote watchdog that enforces the `gap24 -> gap32 -> gap40` queue rule and cancels downstream gaps if the previous one fails the strong-positive gate.
 
 ## Content per run

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="680" viewBox="0 0 1180 680">
+<rect width="1180" height="680" fill="#fcfbf7" />
+<text x="64" y="24" font-size="18" fill="#111827">Task5 real-video family: Future-Seed stays strong from adjacent to gap24</text>
+<text x="64" y="44" font-size="12" fill="#92400e">The signal is not isolated to one temporal geometry; gain remains large across the discovered gap ladder.</text>
+<rect x="56" y="82" width="520" height="520" rx="12" ry="12" fill="#fffdf8" stroke="#d6d3d1" stroke-width="2" />
+<text x="74" y="98" font-size="12" fill="#111827">Delta maskacc_fg_val</text>
+<text x="74" y="114" font-size="11" fill="#92400e">Primary metric</text>
+<line x1="124" y1="562.0" x2="552" y2="562.0" stroke="#d1d5db" stroke-width="1" />
+<text x="70" y="566.0" font-size="11" fill="#111827">0.00</text>
+<line x1="124" y1="419.3" x2="552" y2="419.3" stroke="#d1d5db" stroke-width="1" />
+<text x="70" y="423.3" font-size="11" fill="#111827">0.06</text>
+<line x1="124" y1="276.7" x2="552" y2="276.7" stroke="#d1d5db" stroke-width="1" />
+<text x="70" y="280.7" font-size="11" fill="#111827">0.12</text>
+<line x1="124" y1="134.0" x2="552" y2="134.0" stroke="#d1d5db" stroke-width="1" />
+<text x="70" y="138.0" font-size="11" fill="#111827">0.18</text>
+<line x1="124" y1="134" x2="124" y2="562" stroke="#1f2937" stroke-width="2" />
+<line x1="124" y1="562" x2="552" y2="562" stroke="#1f2937" stroke-width="2" />
+<rect x="143.0" y="206.5" width="47.6" height="355.5" fill="#0f766e" stroke="#0f766e" />
+<text x="154.8" y="584.0" font-size="11" fill="#111827">adjacent</text>
+<text x="154.8" y="200.5" font-size="11" fill="#0f766e">0.149</text>
+<rect x="228.6" y="251.7" width="47.6" height="310.3" fill="#0f766e" stroke="#0f766e" />
+<text x="240.4" y="584.0" font-size="11" fill="#111827">gap4</text>
+<text x="240.4" y="245.7" font-size="11" fill="#0f766e">0.131</text>
+<rect x="314.2" y="249.6" width="47.6" height="312.4" fill="#0f766e" stroke="#0f766e" />
+<text x="326.0" y="584.0" font-size="11" fill="#111827">gap8</text>
+<text x="326.0" y="243.6" font-size="11" fill="#0f766e">0.131</text>
+<rect x="399.8" y="198.4" width="47.6" height="363.6" fill="#0f766e" stroke="#0f766e" />
+<text x="411.6" y="584.0" font-size="11" fill="#111827">gap16</text>
+<text x="411.6" y="192.4" font-size="11" fill="#0f766e">0.153</text>
+<rect x="485.4" y="239.1" width="47.6" height="322.9" fill="#0f766e" stroke="#0f766e" />
+<text x="497.2" y="584.0" font-size="11" fill="#111827">gap24</text>
+<text x="497.2" y="233.1" font-size="11" fill="#0f766e">0.136</text>
+<rect x="606" y="82" width="520" height="520" rx="12" ry="12" fill="#fffdf8" stroke="#d6d3d1" stroke-width="2" />
+<text x="624" y="98" font-size="12" fill="#111827">Validation-loss improvement (-delta_last_val_loss)</text>
+<text x="624" y="114" font-size="11" fill="#92400e">Supporting evidence</text>
+<line x1="674" y1="562.0" x2="1102" y2="562.0" stroke="#d1d5db" stroke-width="1" />
+<text x="620" y="566.0" font-size="11" fill="#111827">0.00</text>
+<line x1="674" y1="455.0" x2="1102" y2="455.0" stroke="#d1d5db" stroke-width="1" />
+<text x="620" y="459.0" font-size="11" fill="#111827">0.20</text>
+<line x1="674" y1="348.0" x2="1102" y2="348.0" stroke="#d1d5db" stroke-width="1" />
+<text x="620" y="352.0" font-size="11" fill="#111827">0.40</text>
+<line x1="674" y1="241.0" x2="1102" y2="241.0" stroke="#d1d5db" stroke-width="1" />
+<text x="620" y="245.0" font-size="11" fill="#111827">0.60</text>
+<line x1="674" y1="134.0" x2="1102" y2="134.0" stroke="#d1d5db" stroke-width="1" />
+<text x="620" y="138.0" font-size="11" fill="#111827">0.80</text>
+<line x1="674" y1="134" x2="674" y2="562" stroke="#1f2937" stroke-width="2" />
+<line x1="674" y1="562" x2="1102" y2="562" stroke="#1f2937" stroke-width="2" />
+<rect x="693.0" y="182.7" width="47.6" height="379.3" fill="#1d4ed8" stroke="#1d4ed8" />
+<text x="704.8" y="584.0" font-size="11" fill="#111827">adjacent</text>
+<text x="704.8" y="176.7" font-size="11" fill="#1d4ed8">0.709</text>
+<rect x="778.6" y="192.7" width="47.6" height="369.3" fill="#1d4ed8" stroke="#1d4ed8" />
+<text x="790.4" y="584.0" font-size="11" fill="#111827">gap4</text>
+<text x="790.4" y="186.7" font-size="11" fill="#1d4ed8">0.690</text>
+<rect x="864.2" y="196.3" width="47.6" height="365.7" fill="#1d4ed8" stroke="#1d4ed8" />
+<text x="876.0" y="584.0" font-size="11" fill="#111827">gap8</text>
+<text x="876.0" y="190.3" font-size="11" fill="#1d4ed8">0.684</text>
+<rect x="949.8" y="197.1" width="47.6" height="364.9" fill="#1d4ed8" stroke="#1d4ed8" />
+<text x="961.6" y="584.0" font-size="11" fill="#111827">gap16</text>
+<text x="961.6" y="191.1" font-size="11" fill="#1d4ed8">0.682</text>
+<rect x="1035.4" y="211.1" width="47.6" height="350.9" fill="#1d4ed8" stroke="#1d4ed8" />
+<text x="1047.2" y="584.0" font-size="11" fill="#111827">gap24</text>
+<text x="1047.2" y="205.1" font-size="11" fill="#1d4ed8">0.656</text>
+<rect x="640" y="614" width="460" height="48" rx="12" ry="12" fill="#fffdf8" stroke="#d6d3d1" stroke-width="2" />
+<text x="660" y="642" font-size="12" fill="#111827">Best FG gain: gap16 = +0.1529; weakest confirmed still = gap4 = +0.1305</text>
+</svg>

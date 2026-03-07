@@ -28,3 +28,13 @@
 - together they show two different strengths:
   - one line is **solid and reproducible**
   - one line is **large-effect and highly promising**
+
+## 4. Family-Level Real-Video Gap Ladder
+
+- Figure: [task5_gap_family.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_gap_family.png)
+- What to look at:
+  - left panel: `delta_maskacc_fg_val` stays in the `+0.13` to `+0.15` band from `adjacent` through `gap24`
+  - right panel: validation-loss improvement remains large across the same family
+- Interpretation:
+  - this is the compact view showing the current best claim on the discovery side
+  - the `task5` real-video family is not a one-off win; it stays strongly positive across multiple temporal gaps
