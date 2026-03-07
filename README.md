@@ -98,13 +98,17 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Analysis Docs
 - [BUDGET_BOUNDARY.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/BUDGET_BOUNDARY.md): formal note for the `ratio50` budget threshold claim.
+- [VISUAL_SUMMARY.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/VISUAL_SUMMARY.md): quick figure guide for the main solid line and the strong `gap4` positive line.
 - [TASK_CANDIDATES.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/TASK_CANDIDATES.md): ranked list of likely next effective tasks.
 - [task_candidate_scoreboard.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task_candidate_scoreboard.csv): sortable evidence table for ready-now and derived candidate tasks.
 - [ratio50_budget_boundary_summary.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/ratio50_budget_boundary_summary.csv): compact numeric table behind that note.
 - [ratio50_budget_boundary_caption.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/ratio50_budget_boundary_caption.md): paper-style caption text for the budget figure.
 - [ratio50_budget_boundary.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/ratio50_budget_boundary.png): raster figure for slides/docs.
 - [ratio50_budget_boundary.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/ratio50_budget_boundary.svg): vector figure for paper/export.
+- [task5_realvideo_gap4_long_v2_curves.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_realvideo_gap4_long_v2_curves.png): training-curve comparison of `FS0` vs `FS1` on the strong `gap4` real-video task.
+- [task5_realvideo_gap4_long_v2_curves.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_realvideo_gap4_long_v2_curves.svg): vector version of that curve figure.
 - [plot_ratio50_budget_boundary.py](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/plot_ratio50_budget_boundary.py): no-dependency plot generator using `Pillow`.
+- [plot_task5_gap4_curves.py](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/plot_task5_gap4_curves.py): no-dependency curve plot generator for the strong `gap4` task.
 
 ## Content per run
 - `summary_rows.csv`

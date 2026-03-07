@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="620" viewBox="0 0 1180 620">
+<rect width="1180" height="620" fill="#fcfbf7" />
+<text x="80" y="24" font-size="18" fill="#111827">Strong positive real-video task: gap4 midframe recovery</text>
+<text x="80" y="46" font-size="12" fill="#92400e">FS1 pulls away early and keeps widening the gap through step 399</text>
+<line x1="80.0" y1="90" x2="80.0" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="70.0" y="502" font-size="11" fill="#111827">0</text>
+<line x1="138.8" y1="90" x2="138.8" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="128.8" y="502" font-size="11" fill="#111827">50</text>
+<line x1="197.5" y1="90" x2="197.5" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="187.5" y="502" font-size="11" fill="#111827">100</text>
+<line x1="256.2" y1="90" x2="256.2" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="246.2" y="502" font-size="11" fill="#111827">150</text>
+<line x1="315.0" y1="90" x2="315.0" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="305.0" y="502" font-size="11" fill="#111827">200</text>
+<line x1="373.8" y1="90" x2="373.8" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="363.8" y="502" font-size="11" fill="#111827">250</text>
+<line x1="432.5" y1="90" x2="432.5" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="422.5" y="502" font-size="11" fill="#111827">300</text>
+<line x1="491.2" y1="90" x2="491.2" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="481.2" y="502" font-size="11" fill="#111827">350</text>
+<line x1="548.8" y1="90" x2="548.8" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="538.8" y="502" font-size="11" fill="#111827">399</text>
+<line x1="80" y1="480.0" x2="550" y2="480.0" stroke="#d1d5db" stroke-width="1" />
+<text x="32" y="484.0" font-size="11" fill="#111827">0.00</text>
+<line x1="80" y1="382.5" x2="550" y2="382.5" stroke="#d1d5db" stroke-width="1" />
+<text x="32" y="386.5" font-size="11" fill="#111827">0.15</text>
+<line x1="80" y1="285.0" x2="550" y2="285.0" stroke="#d1d5db" stroke-width="1" />
+<text x="32" y="289.0" font-size="11" fill="#111827">0.30</text>
+<line x1="80" y1="187.5" x2="550" y2="187.5" stroke="#d1d5db" stroke-width="1" />
+<text x="32" y="191.5" font-size="11" fill="#111827">0.45</text>
+<line x1="80" y1="90.0" x2="550" y2="90.0" stroke="#d1d5db" stroke-width="1" />
+<text x="32" y="94.0" font-size="11" fill="#111827">0.60</text>
+<line x1="80" y1="90" x2="80" y2="480" stroke="#1f2937" stroke-width="2" />
+<line x1="80" y1="480" x2="550" y2="480" stroke="#1f2937" stroke-width="2" />
+<text x="80" y="76" font-size="12" fill="#111827">maskacc_fg_val</text>
+<text x="500" y="502" font-size="11" fill="#111827">step</text>
+<line x1="630.0" y1="90" x2="630.0" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="620.0" y="502" font-size="11" fill="#111827">0</text>
+<line x1="688.8" y1="90" x2="688.8" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="678.8" y="502" font-size="11" fill="#111827">50</text>
+<line x1="747.5" y1="90" x2="747.5" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="737.5" y="502" font-size="11" fill="#111827">100</text>
+<line x1="806.2" y1="90" x2="806.2" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="796.2" y="502" font-size="11" fill="#111827">150</text>
+<line x1="865.0" y1="90" x2="865.0" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="855.0" y="502" font-size="11" fill="#111827">200</text>
+<line x1="923.8" y1="90" x2="923.8" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="913.8" y="502" font-size="11" fill="#111827">250</text>
+<line x1="982.5" y1="90" x2="982.5" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="972.5" y="502" font-size="11" fill="#111827">300</text>
+<line x1="1041.2" y1="90" x2="1041.2" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="1031.2" y="502" font-size="11" fill="#111827">350</text>
+<line x1="1098.8" y1="90" x2="1098.8" y2="480" stroke="#d1d5db" stroke-width="1" />
+<text x="1088.8" y="502" font-size="11" fill="#111827">399</text>
+<line x1="630" y1="468.9" x2="1100" y2="468.9" stroke="#d1d5db" stroke-width="1" />
+<text x="582" y="472.9" font-size="11" fill="#111827">1.20</text>
+<line x1="630" y1="379.7" x2="1100" y2="379.7" stroke="#d1d5db" stroke-width="1" />
+<text x="582" y="383.7" font-size="11" fill="#111827">1.60</text>
+<line x1="630" y1="290.6" x2="1100" y2="290.6" stroke="#d1d5db" stroke-width="1" />
+<text x="582" y="294.6" font-size="11" fill="#111827">2.00</text>
+<line x1="630" y1="201.4" x2="1100" y2="201.4" stroke="#d1d5db" stroke-width="1" />
+<text x="582" y="205.4" font-size="11" fill="#111827">2.40</text>
+<line x1="630" y1="112.3" x2="1100" y2="112.3" stroke="#d1d5db" stroke-width="1" />
+<text x="582" y="116.3" font-size="11" fill="#111827">2.80</text>
+<line x1="630" y1="90" x2="630" y2="480" stroke="#1f2937" stroke-width="2" />
+<line x1="630" y1="480" x2="1100" y2="480" stroke="#1f2937" stroke-width="2" />
+<text x="630" y="76" font-size="12" fill="#111827">val_loss</text>
+<text x="1050" y="502" font-size="11" fill="#111827">step</text>
+<polyline fill="none" stroke="#6b7280" stroke-width="3" points="80.0,480.0 138.8,314.6 197.5,260.9 256.2,242.4 315.0,238.2 373.8,229.9 432.5,223.5 491.2,214.9 548.8,208.7" />
+<circle cx="80.0" cy="480.0" r="4" fill="#6b7280" />
+<circle cx="138.8" cy="314.6" r="4" fill="#6b7280" />
+<circle cx="197.5" cy="260.9" r="4" fill="#6b7280" />
+<circle cx="256.2" cy="242.4" r="4" fill="#6b7280" />
+<circle cx="315.0" cy="238.2" r="4" fill="#6b7280" />
+<circle cx="373.8" cy="229.9" r="4" fill="#6b7280" />
+<circle cx="432.5" cy="223.5" r="4" fill="#6b7280" />
+<circle cx="491.2" cy="214.9" r="4" fill="#6b7280" />
+<circle cx="548.8" cy="208.7" r="4" fill="#6b7280" />
+<polyline fill="none" stroke="#0f766e" stroke-width="3" points="80.0,480.0 138.8,270.2 197.5,183.9 256.2,160.5 315.0,150.4 373.8,138.7 432.5,134.5 491.2,127.9 548.8,123.9" />
+<circle cx="80.0" cy="480.0" r="4" fill="#0f766e" />
+<circle cx="138.8" cy="270.2" r="4" fill="#0f766e" />
+<circle cx="197.5" cy="183.9" r="4" fill="#0f766e" />
+<circle cx="256.2" cy="160.5" r="4" fill="#0f766e" />
+<circle cx="315.0" cy="150.4" r="4" fill="#0f766e" />
+<circle cx="373.8" cy="138.7" r="4" fill="#0f766e" />
+<circle cx="432.5" cy="134.5" r="4" fill="#0f766e" />
+<circle cx="491.2" cy="127.9" r="4" fill="#0f766e" />
+<circle cx="548.8" cy="123.9" r="4" fill="#0f766e" />
+<polyline fill="none" stroke="#6b7280" stroke-width="3" points="630.0,104.9 688.8,231.2 747.5,263.8 806.2,278.8 865.0,285.6 923.8,292.7 982.5,297.3 1041.2,302.3 1098.8,305.1" />
+<circle cx="630.0" cy="104.9" r="4" fill="#6b7280" />
+<circle cx="688.8" cy="231.2" r="4" fill="#6b7280" />
+<circle cx="747.5" cy="263.8" r="4" fill="#6b7280" />
+<circle cx="806.2" cy="278.8" r="4" fill="#6b7280" />
+<circle cx="865.0" cy="285.6" r="4" fill="#6b7280" />
+<circle cx="923.8" cy="292.7" r="4" fill="#6b7280" />
+<circle cx="982.5" cy="297.3" r="4" fill="#6b7280" />
+<circle cx="1041.2" cy="302.3" r="4" fill="#6b7280" />
+<circle cx="1098.8" cy="305.1" r="4" fill="#6b7280" />
+<polyline fill="none" stroke="#0f766e" stroke-width="3" points="630.0,104.9 688.8,330.6 747.5,397.6 806.2,422.9 865.0,430.6 923.8,443.2 982.5,449.6 1041.2,455.7 1098.8,458.9" />
+<circle cx="630.0" cy="104.9" r="4" fill="#0f766e" />
+<circle cx="688.8" cy="330.6" r="4" fill="#0f766e" />
+<circle cx="747.5" cy="397.6" r="4" fill="#0f766e" />
+<circle cx="806.2" cy="422.9" r="4" fill="#0f766e" />
+<circle cx="865.0" cy="430.6" r="4" fill="#0f766e" />
+<circle cx="923.8" cy="443.2" r="4" fill="#0f766e" />
+<circle cx="982.5" cy="449.6" r="4" fill="#0f766e" />
+<circle cx="1041.2" cy="455.7" r="4" fill="#0f766e" />
+<circle cx="1098.8" cy="458.9" r="4" fill="#0f766e" />
+<text x="920" y="26" font-size="12" fill="#111827">Legend</text>
+<line x1="920" y1="46" x2="942" y2="46" stroke="#6b7280" stroke-width="3" />
+<circle cx="932" cy="46" r="4" fill="#6b7280" />
+<text x="950" y="50" font-size="11" fill="#111827">FS0 baseline</text>
+<line x1="920" y1="66" x2="942" y2="66" stroke="#0f766e" stroke-width="3" />
+<circle cx="932" cy="66" r="4" fill="#0f766e" />
+<text x="950" y="70" font-size="11" fill="#111827">FS1 future-seed</text>
+<rect x="820" y="470" width="300" height="105" rx="12" ry="12" fill="#fffdf8" stroke="#d6d3d1" stroke-width="2" />
+<text x="840" y="492" font-size="12" fill="#111827">best FG: FS0 0.4174 -&gt; FS1 0.5479</text>
+<text x="840" y="517" font-size="12" fill="#065f46">delta FG: +0.1305</text>
+<text x="840" y="542" font-size="12" fill="#111827">last val loss: 1.9349 -&gt; 1.2447</text>
+<text x="840" y="567" font-size="12" fill="#1d4ed8">delta loss: -0.6902</text>
+</svg>
