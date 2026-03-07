@@ -43,18 +43,33 @@ Why it ranks second:
 
 - same structural family as the strong-positive CIFAR `task5_midframe`
 - closer to real video interpolation
-- earlier short-budget run showed a large loss advantage for FS1 even though accuracy stayed flat
+- the long run is now strongly positive, not just loss-positive
 
-Evidence:
-
-- [task5_realvideo_gap4_20260302T100014Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_gap4_20260302T100014Z/summary_agg.json)
-- short run: `delta_maskacc_fg_val = 0.0000`, but `delta_last_val_loss = -0.1611`
+- [task5_realvideo_gap4_long_v2_20260306T135653Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_gap4_long_v2_20260306T135653Z/summary_agg.json)
+- `delta_maskacc_fg_val = +0.1305`
+- `delta_last_val_loss = -0.6902`
 
 Status:
 
-- queued and running after `fullcfg180`
+- confirmed positive
 
-### 3. `realvideo_square_migration` on `realvideo_complex_midfirst`
+### 3. `task5_realvideo_long` on `realtriplet_midfirst`
+
+Why it now ranks third:
+
+- `gap4` is now a strong positive, so the immediate next question is whether the same real-video midframe structure also works at the smaller temporal gap
+- this is the cheapest next validation because it reuses the same recipe and only swaps the dataset
+
+Evidence:
+
+- [task5_realvideo_20260302T091839Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_20260302T091839Z/summary_agg.json)
+- short run: `delta_maskacc_fg_val = 0.0000`, but `delta_last_val_loss = -0.1535`
+
+Interpretation:
+
+- after the new `gap4` success, this line is no longer speculative; it is the nearest adjacent test of the same mechanism
+
+### 4. `realvideo_square_migration` on `realvideo_complex_midfirst`
 
 Why it now ranks third:
 
@@ -77,19 +92,6 @@ Suggested frozen setup:
 - source weights: one of the passed `realvideo_complex_v1_ratio50_full150_*` checkpoints
 - target task: `realvideo_complex_midfirst` with `BIN_MASK_MODE=square`
 - vary only `BIN_SQUARE_SIZE` first; do not change model scale or alpha on the first coarse run
-
-### 4. `task5_realvideo_long` on `realtriplet_midfirst`
-
-Why it ranks fourth:
-
-- same real-video family as candidate 2
-- earlier short-budget run also showed a material FS1 loss advantage
-- likely cheaper to validate than inventing a new dataset
-
-Evidence:
-
-- [task5_realvideo_20260302T091839Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_20260302T091839Z/summary_agg.json)
-- short run: `delta_maskacc_fg_val = 0.0000`, but `delta_last_val_loss = -0.1535`
 
 ### 5. `task5_realvideo_gap8` on `realtriplet_midfirst_gap8`
 
@@ -157,7 +159,7 @@ Evidence:
 
 ## Current Recommendation
 
-1. finish `task5_realvideo_gap4_long_v2`
-2. if it shows either real FG gain or a persistent loss lead, run `task5_realvideo_long`
-3. in parallel planning, prepare `realvideo_square_migration` as the next high-ROI branch because it reuses a confirmed video prefix line and a confirmed `prefix->square` transfer pattern
-4. do not pivot to `moving_mnist`; if the real-video midframe family disappoints, use `task2_square_hole` as the cheaper fallback
+1. run `task5_realvideo_long` next under the same frozen recipe
+2. then open `realvideo_square_migration` as the next high-ROI derived branch because it reuses a confirmed video prefix line and a confirmed `prefix->square` transfer pattern
+3. if both hold, consider `task5_realvideo_gap8` to test whether larger temporal gaps keep amplifying the gain
+4. do not pivot to `moving_mnist`

@@ -41,6 +41,12 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - budget `120`: avg `delta_maskacc_fg_val = +0.02525`
 - confirms the gain transition happens between **90** and **120**
 
+9. `task5_realvideo_gap4_long_v2_20260306T135653Z`
+- strong positive on the real-video midframe family
+- `best_maskacc_fg_val`: FS0 `0.4174` -> FS1 `0.5479`
+- `delta_maskacc_fg_val = +0.1305`
+- `delta_last_val_loss = -0.6902`
+
 ## Step-Extension Probes
 
 1. `realvideo_complex_v1_ratio50_scratch180_seed20260320_20260306T040234Z`
@@ -108,5 +114,5 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Current Search Focus
 - keep extending the already-strong `task5_midframe` family into more realistic real-video variants
-- prioritize `task5_realvideo_gap4_long_v2` first, then `task5_realvideo_long`
+- `task5_realvideo_gap4_long_v2` is now a confirmed positive, so the next immediate branch is `task5_realvideo_long`
 - treat `realvideo_square_migration` as the next high-ROI derived branch because MNIST already showed that `prefix-source -> square` transfer is better than simply adding more steps
