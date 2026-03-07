@@ -109,7 +109,19 @@ Why it matters:
 - after `gap4` and `long_v2` both turned strongly positive, `gap8` becomes the next natural task discovery branch
 - launch status: running as `task5_realvideo_gap8_long_v1_20260307T023000Z`
 
-### 6. `task2_square_hole` on `cifar16_gray_row`
+### 6. `task5_realvideo_gap16` on `realtriplet_midfirst_gap16`
+
+Why it now enters the queue:
+
+- raw-video window count is still healthy at `507` windows, so the stronger-gap variant is not starved for source material
+- this is the cleanest next attempt to amplify future dependence without changing the model, mask recipe, or tokenizer
+
+Status:
+
+- queued as `task5_realvideo_gap16_long_v1_20260307T032500Z`
+- it waits for the current `gap8` run to finish, then starts automatically
+
+### 7. `task2_square_hole` on `cifar16_gray_row`
 
 Why it ranks sixth:
 
@@ -122,7 +134,7 @@ Evidence:
 - [task2_long_20260302T044214Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task2_long_20260302T044214Z/summary_agg.json)
 - `delta_maskacc_fg_val = +0.0081`
 
-### 7. `realvideo_left=right` positive control
+### 8. `realvideo_left=right` positive control
 
 Why it ranks seventh:
 
@@ -134,7 +146,7 @@ Why it matters:
 - if a real-video line becomes ambiguous, this task can tell us whether the issue is the mechanism or the dataset/task geometry
 - this needs a small data-generation pass, so it stays below the ready-now candidates
 
-### 8. `task1_left_half` on `cifar16_gray_col`
+### 9. `task1_left_half` on `cifar16_gray_col`
 
 Why it ranks lower:
 
@@ -147,7 +159,7 @@ Evidence:
 - [coarse_15_20260302T033458Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/coarse_15_20260302T033458Z/summary_agg.json)
 - `delta_maskacc_fg_val = 0.0000`
 
-### 9. `moving_mnist_*`
+### 10. `moving_mnist_*`
 
 Why it ranks last:
 
@@ -164,6 +176,7 @@ Evidence:
 ## Current Recommendation
 
 1. `task5_realvideo_long_v2` is now also strongly positive
-2. `task5_realvideo_gap8_long_v1` is now running as the next task-discovery branch
-3. keep `realvideo_square_migration` on deck, but treat it as a small-code-patch branch rather than an immediate run
-4. do not pivot to `moving_mnist`
+2. `task5_realvideo_gap8_long_v1` is running as the next task-discovery branch
+3. `task5_realvideo_gap16_long_v1` is queued behind `gap8` as the stronger-gap follow-up
+4. keep `realvideo_square_migration` on deck, but treat it as a small-code-patch branch rather than an immediate run
+5. do not pivot to `moving_mnist`

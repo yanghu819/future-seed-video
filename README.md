@@ -126,4 +126,5 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - keep extending the already-strong `task5_midframe` family into more realistic real-video variants
 - `task5_realvideo_gap4_long_v2` and `task5_realvideo_long_v2` are both now confirmed positives
 - `task5_realvideo_gap8_long_v1_20260307T023000Z` is running as the next future-dependence amplification branch
+- `task5_realvideo_gap16_long_v1_20260307T032500Z` is queued behind `gap8`; raw-video window count remains sufficient at this gap
 - treat `realvideo_square_migration` as a high-ROI derived branch that needs a small frame-local square-mask patch before it is runnable
