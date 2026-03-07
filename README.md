@@ -1,6 +1,6 @@
 # future-seed-video backup
 
-Last backup time: 2026-03-06 (local)
+Last backup time: 2026-03-07 (local)
 Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Confirmed positive runs
@@ -64,6 +64,12 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - `best_maskacc_fg_val`: FS0 `0.4100` -> FS1 `0.5629`
 - `delta_maskacc_fg_val = +0.1529`
 - `delta_last_val_loss = -0.6820`
+
+13. `task5_realvideo_gap24_long_v1_20260307T040500Z`
+- strong positive on the still-larger-gap real-video midframe family
+- `best_maskacc_fg_val`: FS0 `0.4327` -> FS1 `0.5685`
+- `delta_maskacc_fg_val = +0.1358`
+- `delta_last_val_loss = -0.6559`
 
 ## Step-Extension Probes
 
@@ -137,8 +143,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Current Search Focus
 - keep extending the already-strong `task5_midframe` family into more realistic real-video variants
-- `task5_realvideo_gap4_long_v2`, `task5_realvideo_long_v2`, `task5_realvideo_gap8_long_v1`, and `task5_realvideo_gap16_long_v1` are all now confirmed positives
-- `task5_realvideo_gap24_long_v1_20260307T040500Z` is running as the next future-dependence amplification branch
-- `task5_realvideo_gap32_long_v1_20260307T040700Z` is queued behind `gap24`; raw-video window count remains sufficient at this gap
-- `analysis/task5_gap_watchdog.py` is now used to keep the queue honest: if `gap24` is not a strong positive, it kills `gap32`; if `gap32` is strong positive, it queues `gap40`
+- `task5_realvideo_gap4_long_v2`, `task5_realvideo_long_v2`, `task5_realvideo_gap8_long_v1`, `task5_realvideo_gap16_long_v1`, and `task5_realvideo_gap24_long_v1` are all now confirmed positives
+- `task5_realvideo_gap32_long_v1_20260307T040700Z` is now the active stronger-gap branch; current `fs0` has already reached `step 150` with `maskacc_fg_val = 0.3865`
+- `analysis/task5_gap_watchdog.py` is now used to keep the queue honest: `gap24` already passed, so `gap32` stays live; if `gap32` is strong positive, the watchdog will queue `gap40`
 - treat `realvideo_square_migration` as a high-ROI derived branch that needs a small frame-local square-mask patch before it is runnable

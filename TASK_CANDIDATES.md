@@ -71,9 +71,26 @@ Status:
 
 - confirmed positive
 
-### 4. `task5_realvideo_gap8_long_v1` on `realtriplet_midfirst_gap8`
+### 4. `task5_realvideo_gap24_long_v1` on `realtriplet_midfirst_gap24`
 
 Why it now ranks fourth:
+
+- it is already confirmed positive, not speculative
+- it extends the same family to an even larger temporal gap while keeping the gain large
+
+Evidence:
+
+- [task5_realvideo_gap24_long_v1_20260307T040500Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_gap24_long_v1_20260307T040500Z/summary_agg.json)
+- `delta_maskacc_fg_val = +0.1358`
+- `delta_last_val_loss = -0.6559`
+
+Status:
+
+- confirmed positive
+
+### 5. `task5_realvideo_gap8_long_v1` on `realtriplet_midfirst_gap8`
+
+Why it now ranks fifth:
 
 - it extends the same positive family to a larger temporal gap than `gap4`
 - effect size remains large rather than collapsing
@@ -84,13 +101,9 @@ Evidence:
 - `delta_maskacc_fg_val = +0.1314`
 - `delta_last_val_loss = -0.6836`
 
-Status:
+### 6. `task5_realvideo_gap4_long_v2` on `realtriplet_midfirst_gap4`
 
-- confirmed positive
-
-### 5. `task5_realvideo_gap4_long_v2` on `realtriplet_midfirst_gap4`
-
-Why it now ranks fifth:
+Why it now ranks sixth:
 
 - same structural family as the strong-positive CIFAR `task5_midframe`
 - closer to real video interpolation
@@ -102,27 +115,17 @@ Evidence:
 - `delta_maskacc_fg_val = +0.1305`
 - `delta_last_val_loss = -0.6902`
 
-### 6. `task5_realvideo_gap24` on `realtriplet_midfirst_gap24`
-
-Why it now ranks sixth:
-
-- this is the active stronger-gap search branch
-- raw window count is still acceptable at `475`, so it is a real task-discovery step rather than a data-starved stunt
-
-Status:
-
-- running as `task5_realvideo_gap24_long_v1_20260307T040500Z`
-
 ### 7. `task5_realvideo_gap32` on `realtriplet_midfirst_gap32`
 
 Why it now ranks seventh:
 
-- this is the queued follow-up if `gap24` remains strong
+- this is now the active stronger-gap follow-up after `gap24` passed strongly
 - raw window count is still workable at `443`
 
 Status:
 
-- queued as `task5_realvideo_gap32_long_v1_20260307T040700Z`
+- running as `task5_realvideo_gap32_long_v1_20260307T040700Z`
+- current `fs0` has already reached `step 150` with `maskacc_fg_val = 0.3865`
 
 ### 8. `realvideo_square_migration` on `realvideo_complex_midfirst`
 
@@ -204,9 +207,8 @@ Evidence:
 
 ## Current Recommendation
 
-1. `task5` real-video family is now strongly positive across `adjacent`, `gap4`, `gap8`, and `gap16`
-2. `task5_realvideo_gap24_long_v1` is running as the next stronger-gap discovery branch
-3. `task5_realvideo_gap32_long_v1` is queued behind `gap24`
-4. `analysis/task5_gap_watchdog.py` now owns the queue rule: if `gap24` is not strong positive it will cancel `gap32`; if `gap32` is strong positive it will queue `gap40`
-5. keep `realvideo_square_migration` on deck, but treat it as a small-code-patch branch rather than an immediate run
-6. do not pivot to `moving_mnist`
+1. `task5` real-video family is now strongly positive across `adjacent`, `gap4`, `gap8`, `gap16`, and `gap24`
+2. `task5_realvideo_gap32_long_v1` is now the active stronger-gap discovery branch
+3. `analysis/task5_gap_watchdog.py` has already validated `gap24`; it will keep `gap32` alive and queue `gap40` only if `gap32` also passes the strong-positive gate
+4. keep `realvideo_square_migration` on deck, but treat it as a small-code-patch branch rather than an immediate run
+5. do not pivot to `moving_mnist`
