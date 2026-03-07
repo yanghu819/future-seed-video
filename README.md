@@ -53,6 +53,18 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - `delta_maskacc_fg_val = +0.1495`
 - `delta_last_val_loss = -0.7089`
 
+11. `task5_realvideo_gap8_long_v1_20260307T023000Z`
+- strong positive on the larger-gap real-video midframe family
+- `best_maskacc_fg_val`: FS0 `0.4518` -> FS1 `0.5832`
+- `delta_maskacc_fg_val = +0.1314`
+- `delta_last_val_loss = -0.6836`
+
+12. `task5_realvideo_gap16_long_v1_20260307T032500Z`
+- strong positive on the much-larger-gap real-video midframe family
+- `best_maskacc_fg_val`: FS0 `0.4100` -> FS1 `0.5629`
+- `delta_maskacc_fg_val = +0.1529`
+- `delta_last_val_loss = -0.6820`
+
 ## Step-Extension Probes
 
 1. `realvideo_complex_v1_ratio50_scratch180_seed20260320_20260306T040234Z`
@@ -115,6 +127,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - [task5_realvideo_gap4_long_v2_curves.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_realvideo_gap4_long_v2_curves.svg): vector version of that curve figure.
 - [plot_ratio50_budget_boundary.py](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/plot_ratio50_budget_boundary.py): no-dependency plot generator using `Pillow`.
 - [plot_task5_gap4_curves.py](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/plot_task5_gap4_curves.py): no-dependency curve plot generator for the strong `gap4` task.
+- [task5_gap_watchdog.py](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task5_gap_watchdog.py): remote watchdog that enforces the `gap24 -> gap32 -> gap40` queue rule and cancels downstream gaps if the previous one fails the strong-positive gate.
 
 ## Content per run
 - `summary_rows.csv`
@@ -124,7 +137,8 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Current Search Focus
 - keep extending the already-strong `task5_midframe` family into more realistic real-video variants
-- `task5_realvideo_gap4_long_v2` and `task5_realvideo_long_v2` are both now confirmed positives
-- `task5_realvideo_gap8_long_v1_20260307T023000Z` is running as the next future-dependence amplification branch
-- `task5_realvideo_gap16_long_v1_20260307T032500Z` is queued behind `gap8`; raw-video window count remains sufficient at this gap
+- `task5_realvideo_gap4_long_v2`, `task5_realvideo_long_v2`, `task5_realvideo_gap8_long_v1`, and `task5_realvideo_gap16_long_v1` are all now confirmed positives
+- `task5_realvideo_gap24_long_v1_20260307T040500Z` is running as the next future-dependence amplification branch
+- `task5_realvideo_gap32_long_v1_20260307T040700Z` is queued behind `gap24`; raw-video window count remains sufficient at this gap
+- `analysis/task5_gap_watchdog.py` is now used to keep the queue honest: if `gap24` is not a strong positive, it kills `gap32`; if `gap32` is strong positive, it queues `gap40`
 - treat `realvideo_square_migration` as a high-ROI derived branch that needs a small frame-local square-mask patch before it is runnable
