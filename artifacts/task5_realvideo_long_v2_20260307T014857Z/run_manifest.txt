@@ -1,0 +1,8 @@
+goal=P13_task5_realvideo_long_v2
+metric_primary=maskacc_fg_val
+threshold_coarse=+0.008
+priority_reason=gap4 long is now strongly positive; next cheapest same-family validation is adjacent-context realtriplet_midfirst
+hard_constraints=single_gpu_only; frozen recipe copied from gap4_long_v2 except dataset path and seed
+fixed=data=realtriplet_midfirst,vocab=16,seq_len=768,mask=prefix:0.333333,n_layer=2,n_embd=128,head=32,device_bsz=64,batch=128,max_iters=400,eval_interval=50,maskacc_iters=100,fg_threshold=0,random_seed=20260307
+change=FUTURE_SEED(0|1),ALPHA(fs1=-2)
+failure=oom_or_nan_or_missing_metric

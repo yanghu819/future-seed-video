@@ -47,6 +47,12 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - `delta_maskacc_fg_val = +0.1305`
 - `delta_last_val_loss = -0.6902`
 
+10. `task5_realvideo_long_v2_20260307T014857Z`
+- strong positive on the adjacent-context real-video midframe family
+- `best_maskacc_fg_val`: FS0 `0.4010` -> FS1 `0.5505`
+- `delta_maskacc_fg_val = +0.1495`
+- `delta_last_val_loss = -0.7089`
+
 ## Step-Extension Probes
 
 1. `realvideo_complex_v1_ratio50_scratch180_seed20260320_20260306T040234Z`
@@ -118,5 +124,6 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Current Search Focus
 - keep extending the already-strong `task5_midframe` family into more realistic real-video variants
-- `task5_realvideo_gap4_long_v2` is now a confirmed positive, so the next immediate branch is `task5_realvideo_long`
-- treat `realvideo_square_migration` as the next high-ROI derived branch because MNIST already showed that `prefix-source -> square` transfer is better than simply adding more steps
+- `task5_realvideo_gap4_long_v2` and `task5_realvideo_long_v2` are both now confirmed positives
+- `task5_realvideo_gap8_long_v1_20260307T023000Z` is running as the next future-dependence amplification branch
+- treat `realvideo_square_migration` as a high-ROI derived branch that needs a small frame-local square-mask patch before it is runnable

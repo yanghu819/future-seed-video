@@ -68,6 +68,7 @@
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/22/f6cf755c31d167b08ccb1ecee23f9dbd82604c
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/23/0ed5f8b58857223f0903b86e3f8b94387940b8
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/23/b92568d13cb4bd61799c59dfaca83a0324a4e8
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/24/767d9875aa51262c44e53285c80032090225af
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/24/805c2bc73ef01847eb95a42308793aaa81dc2f
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/24/f946ba7181761a382e33cc25f65fddaae1269c
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/25/9d0867e68039ea983cb345fbbfc7b16f1156be
@@ -87,6 +88,7 @@
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/32/1058f3217fa207116ffe46713e03b0a9bd5947
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/35/80bc9bfc24ffbc5f38bccdae7f01a03b310b9b
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/35/effcc4bb56d28817b529601f29147893030382
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/36/e8899c981eb283b4c07449e71df5cec747fca2
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/39/0c4edc20e60e1188dd6da48019a83a234af3b1
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/39/c949d8739478060864a0829b160011649f33fc
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/3a/a090274abe8cb6d07af85ef7ebc1081865e71f
@@ -161,6 +163,7 @@
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/6c/5aa4a986d3f4de04cb609cb696e98deba979c1
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/6d/b376ad2c3480c5fa824fa889b780abdab8f03f
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/6e/7e670c1982404cee2be10c3582dd6cca4d95f6
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/6e/a7b607dd9db074a201decb083373ccde76d6b4
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/6e/bbcf3abe589a805e25c60ff7b0d5c891c078f7
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/6e/dd9ecb85268393346920adf5897cf47b1ce318
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/70/059a31b9d4a590a19fbfd4d395a8c49314e422
@@ -175,6 +178,7 @@
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/7a/bda6630d11417267ebf0808a3f038c6d6e0207
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/7b/166b0c4988f4cdf0a80c97489fa3b6077cb7e6
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/7b/2e8c0e496777d05811bd564604aa15ee665431
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/7b/cbc66fca8f0356bd78c0d9347c996c61bd941f
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/7d/0383b0ff4fbace6952f4b970ace757bef5f063
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/7d/b03e8c5f8a8d04966a9ffd8ac4f1f3c5e4528d
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/7e/efec5f5c6025be4818f2fcc85acde8c04883fa
@@ -228,10 +232,12 @@
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ac/5d8284acd03a97c76a295f596b632cf679303e
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ad/f5dcc5f2f9e4a59ee447a7ed26a90673db3cc7
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ae/138fa6452a92d8ca156376f29f0c508e652781
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ae/4dcf32cb57ce9c2f32ba6af7634ba4e2a14d00
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ae/a2eb40157d535deb4f4950db59f2fa4565c9c8
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ae/ca2b094f153f7280ac486c21c0e1bd20651d55
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/af/26cdb3b8456d72d05d717d3eb5f5b867574677
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/af/30b6272875bc7379f4eb39f1b49045692207bd
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/af/bb21dea6843252987443981925d08ddbb74c92
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/af/c91eded2a35b45849a62978e5d536c0eb19e66
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/af/d97edf07403052186b18d5600e971f7fd5ae30
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/b0/adca4b393d9d6f214b56969b050d92afd7ce62
@@ -276,6 +282,7 @@
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/d0/6d66338f0abbbd9bfeece3ced6539f33a3e6e2
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/d1/1fe2a22b6da41cf207c4376b80be1124033057
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/d1/60f78b1dcd286f85571e9c9fd10a0049a5b311
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/d2/13b6ae2d045f871634522e86b8c6fe67317779
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/d3/ad5966f7ac0c073b42d1e7d3622932ad8571f8
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/d4/fb0ec36817986aa8b431cdedda6cf9831ff186
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/d5/536fa84bfcc84bc6816fb17fb8156968392b57
@@ -307,10 +314,13 @@
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/e6/719263a692782f2fe1522b04ffbfbd385ddbc9
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/e7/6633e873f233442497d83822dbf01e5479155d
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/e8/22b006795b8b9a10cfe365466e45c5110b47c8
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/e8/5bf3780310733d7fb96b6d49532e80dde5cd75
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/e8/9f1d694085442e3dcf33526942eb6bce162d55
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/e9/54693ce5f0c602231fd2151093b472507df9e8
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/e9/f0e92940c0bd307af66f4f79533a3947b67801
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ea/8d4f15a7e60ba79ab6b58366d831ff89fc5c15
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ec/371a7a0ef59e56aac4d93a6852b7b19c673947
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ec/8a60b8ad413c4550db679517039aa5503a5622
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ec/bd1f866dfdcfd727b4acd01dbb23cb97a0a774
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ed/8a9c4d2124a9b4f431366d20d210c33d31d544
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/.git/objects/ee/a5c12dff8cb9df17e1b176a4e29a85b3bfb1ff
@@ -341,6 +351,7 @@
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/README.md
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/TASK_CANDIDATES.md
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/VISUAL_SUMMARY.md
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/build_realtriplet_midfirst_bin.py
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/ratio50_budget_boundary.png
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/ratio50_budget_boundary.svg
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_realvideo_gap4_long_v2_curves.png
@@ -515,3 +526,10 @@
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_gap4_long_v2_20260306T135653Z/runner.sh
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_gap4_long_v2_20260306T135653Z/summary_agg.json
 /Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_gap4_long_v2_20260306T135653Z/summary_rows.csv
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_long_v2_20260307T014857Z/launch.log
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_long_v2_20260307T014857Z/logs/fs0.log
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_long_v2_20260307T014857Z/logs/fs1.log
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_long_v2_20260307T014857Z/run_manifest.txt
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_long_v2_20260307T014857Z/runner.sh
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_long_v2_20260307T014857Z/summary_agg.json
+/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_long_v2_20260307T014857Z/summary_rows.csv

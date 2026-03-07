@@ -80,12 +80,14 @@ Why it now ranks third:
 Why it matters:
 
 - it is the cleanest way to test whether the main video prefix success can transfer into a more classic hole-filling setting
-- implementation cost is low because `BIN_MASK_MODE=square` already exists and the trainer already auto-loads `WEIGHTS_PATH` if present
+- but it is not `ready-now`: current `BIN_MASK_MODE=square` requires `SEQ_LEN` to be a perfect square, while the current video triplets use `SEQ_LEN=768/1728`
+- so this branch needs a small frame-local square-mask patch before it can be run cleanly
 
 Evidence:
 
 - [future-seed-video README.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/README.md)
 - [fs-impainting CURRENT_STATUS.md](/Users/torusmini/Downloads/autodl3-impainting-fs/fs-impainting/CURRENT_STATUS.md)
+- [rwkv_diff_future_seed.py](/Users/torusmini/Downloads/autodl3-impainting-fs/payload/src/future-seed-main/rwkv-diff-future-seed/rwkv_diff_future_seed.py): current `square` branch checks `side * side == SEQ_LEN`
 
 Suggested frozen setup:
 
@@ -99,11 +101,13 @@ Why it ranks fifth:
 
 - same task family as the current `gap4` long recheck
 - larger temporal gap should make the middle-frame prediction rely more on future context, which is exactly where Future-Seed should help
-- this is only medium priority because it requires a small data build from the existing raw video source
+- this is now directly buildable from the existing `sample1.mp4` / `sample2.mp4` raw sources with the new bin builder
 
 Why it matters:
 
 - if `gap4` is weak but not dead, `gap8` is the natural way to amplify future dependence without changing the model
+- after `gap4` and `long_v2` both turned strongly positive, `gap8` becomes the next natural task discovery branch
+- launch status: running as `task5_realvideo_gap8_long_v1_20260307T023000Z`
 
 ### 6. `task2_square_hole` on `cifar16_gray_row`
 
@@ -159,7 +163,7 @@ Evidence:
 
 ## Current Recommendation
 
-1. run `task5_realvideo_long` next under the same frozen recipe
-2. then open `realvideo_square_migration` as the next high-ROI derived branch because it reuses a confirmed video prefix line and a confirmed `prefix->square` transfer pattern
-3. if both hold, consider `task5_realvideo_gap8` to test whether larger temporal gaps keep amplifying the gain
+1. `task5_realvideo_long_v2` is now also strongly positive
+2. `task5_realvideo_gap8_long_v1` is now running as the next task-discovery branch
+3. keep `realvideo_square_migration` on deck, but treat it as a small-code-patch branch rather than an immediate run
 4. do not pivot to `moving_mnist`
