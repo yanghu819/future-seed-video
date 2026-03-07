@@ -1,0 +1,13 @@
+{
+  "task5_realvideo_gap32_long": {
+    "best_maskacc_val_fs0": 0.4445,
+    "best_maskacc_val_fs1": 0.5799,
+    "delta_maskacc_val": 0.13539999999999996,
+    "best_maskacc_fg_val_fs0": 0.4467,
+    "best_maskacc_fg_val_fs1": 0.5826,
+    "delta_maskacc_fg_val": 0.13590000000000002,
+    "last_val_loss_fs0": 1.7844,
+    "last_val_loss_fs1": 1.1437,
+    "delta_last_val_loss": -0.6407
+  }
+}

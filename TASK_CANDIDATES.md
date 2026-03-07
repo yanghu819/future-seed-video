@@ -71,12 +71,61 @@ Status:
 
 - confirmed positive
 
-### 4. `task5_realvideo_gap24_long_v1` on `realtriplet_midfirst_gap24`
+### 4. `task5_realvideo_gap40_confirm3` on `realtriplet_midfirst_gap40`
 
 Why it now ranks fourth:
 
-- it is already confirmed positive, not speculative
-- it extends the same family to an even larger temporal gap while keeping the gain large
+- this is the live highest-ROI branch right now
+- `gap40` is the strongest reachable gap under the current raw-window floor, and the base seed is already strongly positive
+- two new seeds are already queued, so this branch can turn the current strongest-gap result into confirm-grade evidence without changing the recipe
+
+Status:
+
+- active confirm queue:
+  - `task5_realvideo_gap40_confirm_seed20260313_20260307T133455Z`
+  - `task5_realvideo_gap40_confirm_seed20260314_20260307T133455Z`
+  - aggregate target: `task5_realvideo_gap40_confirm3_20260307T133455Z`
+
+### 5. `task5_realvideo_gap40_long_v1` on `realtriplet_midfirst_gap40`
+
+Why it now ranks fifth:
+
+- this is the strongest-gap positive we currently have
+- even at `gap40`, the gain remains in the same `+0.13` to `+0.15` band rather than collapsing
+
+Evidence:
+
+- [task5_realvideo_gap40_long_v1_20260307T105308Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_gap40_long_v1_20260307T105308Z/summary_agg.json)
+- `delta_maskacc_fg_val = +0.1471`
+- `delta_last_val_loss = -0.6291`
+
+Status:
+
+- confirmed positive
+
+### 6. `task5_realvideo_gap32_long_v1` on `realtriplet_midfirst_gap32`
+
+Why it now ranks sixth:
+
+- this is no longer speculative; it finished strong positive and unlocked `gap40`
+- it shows the family remains healthy beyond `gap24`
+
+Evidence:
+
+- [task5_realvideo_gap32_long_v1_20260307T040700Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_gap32_long_v1_20260307T040700Z/summary_agg.json)
+- `delta_maskacc_fg_val = +0.1359`
+- `delta_last_val_loss = -0.6407`
+
+Status:
+
+- confirmed positive
+
+### 7. `task5_realvideo_gap24_long_v1` on `realtriplet_midfirst_gap24`
+
+Why it now ranks seventh:
+
+- this was the rung that proved the larger-gap ladder would keep working on real video
+- it remains a strong positive and a clean midpoint in the discovered gap ladder
 
 Evidence:
 
@@ -87,45 +136,6 @@ Evidence:
 Status:
 
 - confirmed positive
-
-### 5. `task5_realvideo_gap8_long_v1` on `realtriplet_midfirst_gap8`
-
-Why it now ranks fifth:
-
-- it extends the same positive family to a larger temporal gap than `gap4`
-- effect size remains large rather than collapsing
-
-Evidence:
-
-- [task5_realvideo_gap8_long_v1_20260307T023000Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_gap8_long_v1_20260307T023000Z/summary_agg.json)
-- `delta_maskacc_fg_val = +0.1314`
-- `delta_last_val_loss = -0.6836`
-
-### 6. `task5_realvideo_gap4_long_v2` on `realtriplet_midfirst_gap4`
-
-Why it now ranks sixth:
-
-- same structural family as the strong-positive CIFAR `task5_midframe`
-- closer to real video interpolation
-- the long run is now strongly positive, not just loss-positive
-
-Evidence:
-
-- [task5_realvideo_gap4_long_v2_20260306T135653Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_gap4_long_v2_20260306T135653Z/summary_agg.json)
-- `delta_maskacc_fg_val = +0.1305`
-- `delta_last_val_loss = -0.6902`
-
-### 7. `task5_realvideo_gap32` on `realtriplet_midfirst_gap32`
-
-Why it now ranks seventh:
-
-- this is now the active stronger-gap follow-up after `gap24` passed strongly
-- raw window count is still workable at `443`
-
-Status:
-
-- running as `task5_realvideo_gap32_long_v1_20260307T040700Z`
-- current `fs0` has already reached `step 150` with `maskacc_fg_val = 0.3865`
 
 ### 8. `realvideo_square_migration` on `realvideo_complex_midfirst`
 
@@ -207,8 +217,8 @@ Evidence:
 
 ## Current Recommendation
 
-1. `task5` real-video family is now strongly positive across `adjacent`, `gap4`, `gap8`, `gap16`, and `gap24`
-2. `task5_realvideo_gap32_long_v1` is now the active stronger-gap discovery branch
-3. `analysis/task5_gap_watchdog.py` has already validated `gap24`; it will keep `gap32` alive and queue `gap40` only if `gap32` also passes the strong-positive gate
+1. `task5` real-video family is now strongly positive across `adjacent`, `gap4`, `gap8`, `gap16`, `gap24`, `gap32`, and `gap40`
+2. the highest-ROI active branch is now `gap40` 3-seed confirm
+3. the automatic `gap24 -> gap32 -> gap40` ladder completed cleanly; every rung passed the strong-positive gate
 4. keep `realvideo_square_migration` on deck, but treat it as a small-code-patch branch rather than an immediate run
 5. do not pivot to `moving_mnist`

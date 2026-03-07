@@ -18,6 +18,8 @@ RUNS = [
     ('gap8', 'task5_realvideo_gap8_long_v1_20260307T023000Z', 'task5_realvideo_gap8_long_v1'),
     ('gap16', 'task5_realvideo_gap16_long_v1_20260307T032500Z', 'task5_realvideo_gap16_long_v1'),
     ('gap24', 'task5_realvideo_gap24_long_v1_20260307T040500Z', 'task5_realvideo_gap24_long'),
+    ('gap32', 'task5_realvideo_gap32_long_v1_20260307T040700Z', 'task5_realvideo_gap32_long'),
+    ('gap40', 'task5_realvideo_gap40_long_v1_20260307T105308Z', 'task5_realvideo_gap40_long_v1'),
 ]
 
 W, H = 1180, 680
@@ -95,8 +97,8 @@ def draw_png(rows: list[dict]) -> None:
     img = Image.new('RGBA', (W, H), BG)
     draw = ImageDraw.Draw(img)
     font = ImageFont.load_default()
-    draw.text((64, 24), 'Task5 real-video family: Future-Seed stays strong from adjacent to gap24', fill=TEXT, font=font)
-    draw.text((64, 44), 'The signal is not isolated to one temporal geometry; gain remains large across the discovered gap ladder.', fill=ACCENT, font=font)
+    draw.text((64, 24), 'Task5 real-video family: Future-Seed stays strong from adjacent to gap40', fill=TEXT, font=font)
+    draw.text((64, 44), 'The signal is not isolated to one temporal geometry; gain remains large across the discovered gap ladder through gap40.', fill=ACCENT, font=font)
     draw_panel(draw, left=56, top=82, width=520, height=520, title='Delta maskacc_fg_val', ymax=0.18, rows=rows, key='delta_fg', color=BAR_FG, y_ticks=[0.00, 0.06, 0.12, 0.18], subtitle='Primary metric')
     draw_panel(draw, left=606, top=82, width=520, height=520, title='Validation-loss improvement (-delta_last_val_loss)', ymax=0.80, rows=rows, key='delta_loss_improve', color=BAR_LOSS, y_ticks=[0.00, 0.20, 0.40, 0.60, 0.80], subtitle='Supporting evidence')
     best = max(rows, key=lambda r: r['delta_fg'])
@@ -114,8 +116,8 @@ def draw_svg(rows: list[dict]) -> None:
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
         f'<rect width="{W}" height="{H}" fill="{BG}" />',
-        f'<text x="64" y="24" font-size="18" fill="{TEXT}">Task5 real-video family: Future-Seed stays strong from adjacent to gap24</text>',
-        f'<text x="64" y="44" font-size="12" fill="{ACCENT}">The signal is not isolated to one temporal geometry; gain remains large across the discovered gap ladder.</text>',
+        f'<text x="64" y="24" font-size="18" fill="{TEXT}">Task5 real-video family: Future-Seed stays strong from adjacent to gap40</text>',
+        f'<text x="64" y="44" font-size="12" fill="{ACCENT}">The signal is not isolated to one temporal geometry; gain remains large across the discovered gap ladder through gap40.</text>',
     ]
 
     def panel(left: int, top: int, width: int, height: int, title: str, ymax: float, key: str, color: str, ticks: list[float], subtitle: str) -> None:

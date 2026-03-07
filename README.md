@@ -71,6 +71,18 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - `delta_maskacc_fg_val = +0.1358`
 - `delta_last_val_loss = -0.6559`
 
+14. `task5_realvideo_gap32_long_v1_20260307T040700Z`
+- strong positive on the extreme-gap real-video midframe family
+- `best_maskacc_fg_val`: FS0 `0.4467` -> FS1 `0.5826`
+- `delta_maskacc_fg_val = +0.1359`
+- `delta_last_val_loss = -0.6407`
+
+15. `task5_realvideo_gap40_long_v1_20260307T105308Z`
+- strong positive on the strongest-gap real-video midframe family that still clears the current raw-window floor
+- `best_maskacc_fg_val`: FS0 `0.4556` -> FS1 `0.6027`
+- `delta_maskacc_fg_val = +0.1471`
+- `delta_last_val_loss = -0.6291`
+
 ## Step-Extension Probes
 
 1. `realvideo_complex_v1_ratio50_scratch180_seed20260320_20260306T040234Z`
@@ -131,9 +143,9 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - [ratio50_budget_boundary.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/ratio50_budget_boundary.svg): vector figure for paper/export.
 - [task5_realvideo_gap4_long_v2_curves.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_realvideo_gap4_long_v2_curves.png): training-curve comparison of `FS0` vs `FS1` on the strong `gap4` real-video task.
 - [task5_realvideo_gap4_long_v2_curves.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_realvideo_gap4_long_v2_curves.svg): vector version of that curve figure.
-- [task5_gap_family_summary.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task5_gap_family_summary.csv): compact numeric table for the confirmed real-video `task5` family through `gap24`.
+- [task5_gap_family_summary.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task5_gap_family_summary.csv): compact numeric table for the confirmed real-video `task5` family through `gap40`.
 - [task5_gap_family_caption.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task5_gap_family_caption.md): paper-style caption text for the family-level figure.
-- [task5_gap_family.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_gap_family.png): family-level bar figure for `adjacent/gap4/gap8/gap16/gap24`.
+- [task5_gap_family.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_gap_family.png): family-level bar figure for `adjacent/gap4/gap8/gap16/gap24/gap32/gap40`.
 - [task5_gap_family.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_gap_family.svg): vector version of that family-level figure.
 - [plot_ratio50_budget_boundary.py](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/plot_ratio50_budget_boundary.py): no-dependency plot generator using `Pillow`.
 - [plot_task5_gap4_curves.py](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/plot_task5_gap4_curves.py): no-dependency curve plot generator for the strong `gap4` task.
@@ -148,7 +160,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 
 ## Current Search Focus
 - keep extending the already-strong `task5_midframe` family into more realistic real-video variants
-- `task5_realvideo_gap4_long_v2`, `task5_realvideo_long_v2`, `task5_realvideo_gap8_long_v1`, `task5_realvideo_gap16_long_v1`, and `task5_realvideo_gap24_long_v1` are all now confirmed positives
-- `task5_realvideo_gap32_long_v1_20260307T040700Z` is now the active stronger-gap branch; current `fs0` has already reached `step 150` with `maskacc_fg_val = 0.3865`
-- `analysis/task5_gap_watchdog.py` is now used to keep the queue honest: `gap24` already passed, so `gap32` stays live; if `gap32` is strong positive, the watchdog will queue `gap40`
+- `task5_realvideo_gap4_long_v2`, `task5_realvideo_long_v2`, `task5_realvideo_gap8_long_v1`, `task5_realvideo_gap16_long_v1`, `task5_realvideo_gap24_long_v1`, `task5_realvideo_gap32_long_v1`, and `task5_realvideo_gap40_long_v1` are all now confirmed positives
+- the automatic `gap24 -> gap32 -> gap40` ladder completed successfully; every rung passed the strong-positive gate
+- `task5_realvideo_gap40` has now moved into 3-seed confirm: seeds `20260312/20260313/20260314`, with the two new confirm runs queued under `task5_realvideo_gap40_confirm_seed20260313_20260307T133455Z` and `task5_realvideo_gap40_confirm_seed20260314_20260307T133455Z`
 - treat `realvideo_square_migration` as a high-ROI derived branch that needs a small frame-local square-mask patch before it is runnable

@@ -33,8 +33,8 @@
 
 - Figure: [task5_gap_family.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_gap_family.png)
 - What to look at:
-  - left panel: `delta_maskacc_fg_val` stays in the `+0.13` to `+0.15` band from `adjacent` through `gap24`
+  - left panel: `delta_maskacc_fg_val` stays in the `+0.13` to `+0.15` band from `adjacent` through `gap40`
   - right panel: validation-loss improvement remains large across the same family
 - Interpretation:
   - this is the compact view showing the current best claim on the discovery side
-  - the `task5` real-video family is not a one-off win; it stays strongly positive across multiple temporal gaps
+  - the `task5` real-video family is not a one-off win; it stays strongly positive across multiple temporal gaps, and `gap40` is now in 3-seed confirm
