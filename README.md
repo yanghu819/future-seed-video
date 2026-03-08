@@ -90,6 +90,13 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - min/max `delta_maskacc_fg_val = +0.1334 / +0.1577`
 - avg `delta_last_val_loss = -0.6455`
 
+17. `realvideo_square_migration_coarse120_seed20260318_20260308T031506Z`
+- first frame-local square-hole transfer run on `realvideo_complex_midfirst`
+- initialized from `rvc1_ratio50_full150_seed20260318`
+- `best_maskacc_fg_val`: FS0 `0.2989` -> FS1 `0.3622`
+- `delta_maskacc_fg_val = +0.0633`
+- `delta_last_val_loss = -0.4270`
+
 ## Step-Extension Probes
 
 1. `realvideo_complex_v1_ratio50_scratch180_seed20260320_20260306T040234Z`
@@ -171,5 +178,6 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - `task5_realvideo_gap4_long_v2`, `task5_realvideo_long_v2`, `task5_realvideo_gap8_long_v1`, `task5_realvideo_gap16_long_v1`, `task5_realvideo_gap24_long_v1`, `task5_realvideo_gap32_long_v1`, and `task5_realvideo_gap40_long_v1` are all now confirmed positives
 - the automatic `gap24 -> gap32 -> gap40` ladder completed successfully; every rung passed the strong-positive gate
 - `task5_realvideo_gap40_confirm3_20260307T133455Z` has now passed, so the gap-ladder branch is in confirm-grade territory rather than just discovery
-- the next active branch is `realvideo_square_migration_coarse120_seed20260318_20260308T031506Z`, enabled by the new frame-local square-mask support for non-square triplet sequences
+- `realvideo_square_migration_coarse120_seed20260318_20260308T031506Z` already passed coarse with `delta_maskacc_fg_val = +0.0633`
+- the current active branch is square-migration confirm: `realvideo_square_migration_confirm_seed20260317_20260308T123605Z` -> `realvideo_square_migration_confirm_seed20260319_20260308T123605Z` -> aggregate `realvideo_square_migration_confirm3_20260308T123605Z`
 - `realvideo_square_migration` is now runnable because the frame-local square-mask patch has landed in the upstream training script

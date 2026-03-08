@@ -1,0 +1,13 @@
+{
+  "realvideo_square_migration_coarse120": {
+    "best_maskacc_val_fs0": 0.2949,
+    "best_maskacc_val_fs1": 0.3659,
+    "delta_maskacc_val": 0.07100000000000001,
+    "best_maskacc_fg_val_fs0": 0.2989,
+    "best_maskacc_fg_val_fs1": 0.3622,
+    "delta_maskacc_fg_val": 0.06330000000000002,
+    "last_val_loss_fs0": 2.6232,
+    "last_val_loss_fs1": 2.1962,
+    "delta_last_val_loss": -0.42700000000000005
+  }
+}

@@ -1,0 +1,8 @@
+goal=P_realvideo_square_migration_coarse120
+metric_primary=maskacc_fg_val
+threshold_coarse=+0.008
+priority_reason=task5 gap ladder is now solid through gap40; next high-ROI branch is to migrate the successful realvideo prefix line into frame-local square-hole video inpainting
+hard_constraints=single_gpu_only; wait_for=task5_realvideo_gap40_confirm_seed20260314_20260307T133455Z; initialize from ratio50_full150_seed20260318; frozen recipe copied from realvideo_complex_v1 ratio50 except mask geometry and budget
+fixed=data=realvideo_complex_midfirst,vocab=32,seq_len=1728,mask=square(frame_side=24,frame_index=0,size=8),n_layer=3,n_embd=192,head=32,device_bsz=24,batch=96,max_iters=120,eval_interval=30,maskacc_iters=50,fg_threshold=2,random_seed=20260318
+change=FUTURE_SEED(0|1),ALPHA(fs1=-2),INIT_WEIGHTS(from ratio50 full150 same seed)
+failure=oom_or_nan_or_missing_metric
