@@ -1,0 +1,16 @@
+{
+  "task5_realvideo_gap40_confirm3": {
+    "n_seeds": 3,
+    "seeds": [
+      20260312,
+      20260313,
+      20260314
+    ],
+    "avg_delta_maskacc_fg_val": 0.1461,
+    "min_delta_maskacc_fg_val": 0.1334,
+    "max_delta_maskacc_fg_val": 0.1577,
+    "avg_delta_last_val_loss": -0.6455,
+    "all_non_negative_fg": true,
+    "pass_rule": true
+  }
+}

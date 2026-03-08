@@ -1,0 +1,13 @@
+{
+  "task5_realvideo_gap40_confirm_seed20260314": {
+    "best_maskacc_val_fs0": 0.4415,
+    "best_maskacc_val_fs1": 0.5983,
+    "delta_maskacc_val": 0.15680000000000005,
+    "best_maskacc_fg_val_fs0": 0.443,
+    "best_maskacc_fg_val_fs1": 0.6007,
+    "delta_maskacc_fg_val": 0.1577,
+    "last_val_loss_fs0": 1.7695,
+    "last_val_loss_fs1": 1.096,
+    "delta_last_val_loss": -0.6735
+  }
+}

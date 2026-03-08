@@ -71,26 +71,43 @@ Status:
 
 - confirmed positive
 
-### 4. `task5_realvideo_gap40_confirm3` on `realtriplet_midfirst_gap40`
+### 4. `realvideo_square_migration` on `realvideo_complex_midfirst`
 
 Why it now ranks fourth:
 
-- this is the live highest-ROI branch right now
-- `gap40` is the strongest reachable gap under the current raw-window floor, and the base seed is already strongly positive
-- two new seeds are already queued, so this branch can turn the current strongest-gap result into confirm-grade evidence without changing the recipe
+- the gap ladder is now strong enough through `gap40`, so the highest-ROI next question is whether that success transfers into a more classic hole-filling geometry
+- this branch is no longer blocked: the training script now supports frame-local square masking for non-square triplet sequences
+- the first coarse run is already queued and then started under the frozen migrated recipe
 
 Status:
 
-- active confirm queue:
-  - `task5_realvideo_gap40_confirm_seed20260313_20260307T133455Z`
-  - `task5_realvideo_gap40_confirm_seed20260314_20260307T133455Z`
-  - aggregate target: `task5_realvideo_gap40_confirm3_20260307T133455Z`
+- running as `realvideo_square_migration_coarse120_seed20260318_20260308T031506Z`
+- source init: `rvc1_ratio50_full150_seed20260318_{fs0,fs1}`
+- target mask: `square(frame_side=24, frame_index=0, size=8)`
 
-### 5. `task5_realvideo_gap40_long_v1` on `realtriplet_midfirst_gap40`
+### 5. `task5_realvideo_gap40_confirm3` on `realtriplet_midfirst_gap40`
 
 Why it now ranks fifth:
 
-- this is the strongest-gap positive we currently have
+- this is now confirm-grade evidence, not just a single-seed positive
+- it shows the strongest reachable-gap line remains stable across three seeds
+
+Evidence:
+
+- [task5_realvideo_gap40_confirm3_20260307T133455Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/task5_realvideo_gap40_confirm3_20260307T133455Z/summary_agg.json)
+- avg `delta_maskacc_fg_val = +0.1461`
+- min/max `delta_maskacc_fg_val = +0.1334 / +0.1577`
+- avg `delta_last_val_loss = -0.6455`
+
+Status:
+
+- confirm pass
+
+### 6. `task5_realvideo_gap40_long_v1` on `realtriplet_midfirst_gap40`
+
+Why it now ranks sixth:
+
+- this is the strongest-gap single-seed positive we currently have
 - even at `gap40`, the gain remains in the same `+0.13` to `+0.15` band rather than collapsing
 
 Evidence:
@@ -103,9 +120,9 @@ Status:
 
 - confirmed positive
 
-### 6. `task5_realvideo_gap32_long_v1` on `realtriplet_midfirst_gap32`
+### 7. `task5_realvideo_gap32_long_v1` on `realtriplet_midfirst_gap32`
 
-Why it now ranks sixth:
+Why it now ranks seventh:
 
 - this is no longer speculative; it finished strong positive and unlocked `gap40`
 - it shows the family remains healthy beyond `gap24`
@@ -120,9 +137,9 @@ Status:
 
 - confirmed positive
 
-### 7. `task5_realvideo_gap24_long_v1` on `realtriplet_midfirst_gap24`
+### 8. `task5_realvideo_gap24_long_v1` on `realtriplet_midfirst_gap24`
 
-Why it now ranks seventh:
+Why it now ranks eighth:
 
 - this was the rung that proved the larger-gap ladder would keep working on real video
 - it remains a strong positive and a clean midpoint in the discovered gap ladder
@@ -136,32 +153,6 @@ Evidence:
 Status:
 
 - confirmed positive
-
-### 8. `realvideo_square_migration` on `realvideo_complex_midfirst`
-
-Why it now ranks eighth:
-
-- this is not just a new guess; it composes two existing wins
-- on video, `realvideo_complex_v1 ratio50 prefix` is already a confirmed positive line
-- on image, `prefix-source -> square` migration was a better ROI move than adding more iters
-
-Why it matters:
-
-- it is the cleanest way to test whether the main video prefix success can transfer into a more classic hole-filling setting
-- but it is not `ready-now`: current `BIN_MASK_MODE=square` requires `SEQ_LEN` to be a perfect square, while the current video triplets use `SEQ_LEN=768/1728`
-- so this branch needs a small frame-local square-mask patch before it can be run cleanly
-
-Evidence:
-
-- [future-seed-video README.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/README.md)
-- [fs-impainting CURRENT_STATUS.md](/Users/torusmini/Downloads/autodl3-impainting-fs/fs-impainting/CURRENT_STATUS.md)
-- [rwkv_diff_future_seed.py](/Users/torusmini/Downloads/autodl3-impainting-fs/payload/src/future-seed-main/rwkv-diff-future-seed/rwkv_diff_future_seed.py): current `square` branch checks `side * side == SEQ_LEN`
-
-Suggested frozen setup:
-
-- source weights: one of the passed `realvideo_complex_v1_ratio50_full150_*` checkpoints
-- target task: `realvideo_complex_midfirst` with `BIN_MASK_MODE=square`
-- vary only `BIN_SQUARE_SIZE` first; do not change model scale or alpha on the first coarse run
 
 ### 9. `task2_square_hole` on `cifar16_gray_row`
 
@@ -217,8 +208,7 @@ Evidence:
 
 ## Current Recommendation
 
-1. `task5` real-video family is now strongly positive across `adjacent`, `gap4`, `gap8`, `gap16`, `gap24`, `gap32`, and `gap40`
-2. the highest-ROI active branch is now `gap40` 3-seed confirm
+1. `task5` real-video family is now strongly positive across `adjacent`, `gap4`, `gap8`, `gap16`, `gap24`, `gap32`, and `gap40`, and `gap40` has already passed 3-seed confirm
+2. the highest-ROI active branch is now `realvideo_square_migration_coarse120_seed20260318_20260308T031506Z`
 3. the automatic `gap24 -> gap32 -> gap40` ladder completed cleanly; every rung passed the strong-positive gate
-4. keep `realvideo_square_migration` on deck, but treat it as a small-code-patch branch rather than an immediate run
-5. do not pivot to `moving_mnist`
+4. do not pivot to `moving_mnist`

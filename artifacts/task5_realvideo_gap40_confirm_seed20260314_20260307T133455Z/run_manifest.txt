@@ -1,0 +1,8 @@
+goal=P_task5_realvideo_gap40_confirm
+metric_primary=maskacc_fg_val
+threshold_confirm=avg_delta_fg_nonneg_3seed
+priority_reason=gap40 remained strong positive at one seed; add two new seeds for confirm-grade evidence on the strongest reachable gap under current raw-window threshold
+hard_constraints=single_gpu_only; wait_for=task5_realvideo_gap40_confirm_seed20260313_20260307T133455Z; frozen recipe copied from gap40 long positive except random seed
+fixed=data=realtriplet_midfirst_gap40,vocab=16,seq_len=768,mask=prefix:0.333333,n_layer=2,n_embd=128,head=32,device_bsz=64,batch=128,max_iters=400,eval_interval=50,maskacc_iters=100,fg_threshold=0,random_seed=20260314
+change=FUTURE_SEED(0|1),ALPHA(fs1=-2)
+failure=oom_or_nan_or_missing_metric

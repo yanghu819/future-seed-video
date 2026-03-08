@@ -1,0 +1,5 @@
+goal=P_task5_realvideo_gap40_confirm3_aggregate
+metric_primary=maskacc_fg_val
+priority_reason=aggregate base gap40 positive seed with two queued confirm seeds
+base_tag=task5_realvideo_gap40_long_v1_20260307T105308Z
+seed_tags=task5_realvideo_gap40_confirm_seed20260313_20260307T133455Z,task5_realvideo_gap40_confirm_seed20260314_20260307T133455Z

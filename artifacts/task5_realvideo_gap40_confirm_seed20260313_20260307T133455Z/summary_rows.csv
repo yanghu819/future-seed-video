@@ -1,0 +1,3 @@
+task,fs,alpha,seed,max_iters,eval_interval,maskacc_iters,best_maskacc_val,best_maskacc_fg_val,last_val_loss,exit_code,log_path
+task5_realvideo_gap40_confirm_seed20260313,0,0,20260313,400,50,100,0.4501,0.4517,1.7626,0,exp/task5_realvideo_gap40_confirm_seed20260313_20260307T133455Z/logs/fs0.log
+task5_realvideo_gap40_confirm_seed20260313,1,-2,20260313,400,50,100,0.5827,0.5851,1.1286,0,exp/task5_realvideo_gap40_confirm_seed20260313_20260307T133455Z/logs/fs1.log

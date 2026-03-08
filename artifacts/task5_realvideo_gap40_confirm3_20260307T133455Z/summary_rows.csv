@@ -1,0 +1,4 @@
+seed,tag,best_maskacc_fg_val_fs0,best_maskacc_fg_val_fs1,delta_maskacc_fg_val,last_val_loss_fs0,last_val_loss_fs1,delta_last_val_loss
+20260312,task5_realvideo_gap40_long_v1_20260307T105308Z,0.4556,0.6027,0.1471,1.7342,1.1051,-0.6291
+20260313,task5_realvideo_gap40_confirm_seed20260313_20260307T133455Z,0.4517,0.5851,0.13339999999999996,1.7626,1.1286,-0.6339999999999999
+20260314,task5_realvideo_gap40_confirm_seed20260314_20260307T133455Z,0.443,0.6007,0.1577,1.7695,1.096,-0.6735

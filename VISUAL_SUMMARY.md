@@ -37,4 +37,4 @@
   - right panel: validation-loss improvement remains large across the same family
 - Interpretation:
   - this is the compact view showing the current best claim on the discovery side
-  - the `task5` real-video family is not a one-off win; it stays strongly positive across multiple temporal gaps, and `gap40` is now in 3-seed confirm
+  - the `task5` real-video family is not a one-off win; it stays strongly positive across multiple temporal gaps, and `gap40` has now passed 3-seed confirm
