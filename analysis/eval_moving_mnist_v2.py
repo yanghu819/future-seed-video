@@ -21,10 +21,15 @@ def parse_args() -> argparse.Namespace:
     p.add_argument('--seq-len', type=int, required=True)
     p.add_argument('--frame-side', type=int, required=True)
     p.add_argument('--frame-count', type=int, default=3)
+    p.add_argument('--target-frame-index', type=int, default=0)
+    p.add_argument('--mask-mode', type=str, default='prefix', choices=['prefix', 'square'])
     p.add_argument('--n-layer', type=int, required=True)
     p.add_argument('--n-embd', type=int, required=True)
     p.add_argument('--head-size', type=int, required=True)
     p.add_argument('--prefix-ratio', type=float, default=0.333333)
+    p.add_argument('--square-size', type=int, default=0)
+    p.add_argument('--square-frame-side', type=int, default=0)
+    p.add_argument('--square-frame-index', type=int, default=0)
     p.add_argument('--eval-samples', type=int, default=256)
     p.add_argument('--seed', type=int, default=20260309)
     p.add_argument('--device', type=str, default='cuda' if torch.cuda.is_available() else 'cpu')
@@ -82,6 +87,41 @@ def infer(model, row: np.ndarray, mask: np.ndarray, mask_token_id: int, device: 
     return out
 
 
+def build_masks(args: argparse.Namespace) -> tuple[np.ndarray, np.ndarray]:
+    frame_tokens = args.frame_side * args.frame_side
+    full_mask = np.zeros(args.seq_len, dtype=bool)
+    metric_mask = np.zeros(frame_tokens, dtype=bool)
+    target_start = args.target_frame_index * frame_tokens
+    target_end = target_start + frame_tokens
+
+    if args.mask_mode == 'prefix':
+        prefix_len = max(1, min(args.seq_len, int(round(args.seq_len * args.prefix_ratio))))
+        full_mask[:prefix_len] = True
+        local_end = max(0, min(frame_tokens, prefix_len - target_start))
+        if target_start < prefix_len and local_end > 0:
+            metric_mask[:local_end] = True
+    elif args.mask_mode == 'square':
+        side = args.square_frame_side or args.frame_side
+        frame_index = args.square_frame_index
+        if side != args.frame_side:
+            raise RuntimeError('square_frame_side must equal frame_side for the fixed evaluator')
+        sq = max(1, min(side, int(args.square_size)))
+        r0 = (side - sq) // 2
+        c0 = (side - sq) // 2
+        square2d = np.zeros((side, side), dtype=bool)
+        square2d[r0:r0 + sq, c0:c0 + sq] = True
+        frame_start = frame_index * frame_tokens
+        full_mask[frame_start:frame_start + frame_tokens] = square2d.reshape(-1)
+        if frame_index == args.target_frame_index:
+            metric_mask[:] = square2d.reshape(-1)
+    else:
+        raise RuntimeError(f'unsupported mask_mode: {args.mask_mode}')
+
+    if not metric_mask.any():
+        raise RuntimeError('metric mask is empty; task/evaluator mismatch')
+    return full_mask, metric_mask
+
+
 def main() -> None:
     args = parse_args()
     np.random.seed(args.seed)
@@ -92,9 +132,9 @@ def main() -> None:
     model = load_model(module, args)
 
     frame_tokens = args.frame_side * args.frame_side
-    prefix_len = frame_tokens
-    mask = np.zeros(args.seq_len, dtype=bool)
-    mask[:prefix_len] = True
+    mask, metric_mask = build_masks(args)
+    target_start = args.target_frame_index * frame_tokens
+    target_end = target_start + frame_tokens
 
     tp = fp = fn = tn = 0
     l1_sum = 0.0
@@ -103,17 +143,19 @@ def main() -> None:
     for i in range(min(args.eval_samples, len(rows))):
         y = rows[i].astype(np.int64)
         out = infer(model, y, mask, args.voc, args.device)
-        gt = y[:frame_tokens]
-        pr = out[:frame_tokens]
-        gt_fg = gt > 0
-        pr_fg = pr > 0
+        gt = y[target_start:target_end]
+        pr = out[target_start:target_end]
+        gt_eval = gt[metric_mask]
+        pr_eval = pr[metric_mask]
+        gt_fg = gt_eval > 0
+        pr_fg = pr_eval > 0
         tp += int(np.logical_and(gt_fg, pr_fg).sum())
         fp += int(np.logical_and(~gt_fg, pr_fg).sum())
         fn += int(np.logical_and(gt_fg, ~pr_fg).sum())
         tn += int(np.logical_and(~gt_fg, ~pr_fg).sum())
-        l1_sum += float(np.abs(pr - gt).mean())
+        l1_sum += float(np.abs(pr_eval - gt_eval).mean())
         if gt_fg.any():
-            fg_acc_sum += float((pr[gt_fg] == gt[gt_fg]).mean())
+            fg_acc_sum += float((pr_eval[gt_fg] == gt_eval[gt_fg]).mean())
             fg_acc_used += 1
 
     iou = tp / max(tp + fp + fn, 1)

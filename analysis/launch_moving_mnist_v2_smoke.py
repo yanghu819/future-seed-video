@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 import shlex
@@ -10,8 +11,8 @@ from pathlib import Path
 
 ROOT = Path('/Users/torusmini/Downloads/autodl3-impainting-fs')
 DOCS = ROOT / 'future-seed-video'
-SPEC = DOCS / 'analysis' / 'moving_mnist_v2_spec.json'
-RESULTS = DOCS / 'analysis' / 'moving_mnist_v2_results.tsv'
+DEFAULT_SPEC = DOCS / 'analysis' / 'moving_mnist_v2_spec.json'
+DEFAULT_RESULTS = DOCS / 'analysis' / 'moving_mnist_v2_results.tsv'
 REMOTE = 'root@connect.bjb2.seetacloud.com'
 SSH_PORT = '19708'
 SSH_KEY = str(Path.home() / '.ssh' / 'autodl_ed25519')
@@ -31,7 +32,15 @@ def qq(s: str) -> str:
     return shlex.quote(str(s))
 
 
-def append_results(run_tag: str, seed: int, agg: dict) -> None:
+def parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description='Launch one Moving MNIST v2 FS0/FS1 comparison.')
+    p.add_argument('--spec', type=Path, default=DEFAULT_SPEC)
+    p.add_argument('--results', type=Path, default=DEFAULT_RESULTS)
+    p.add_argument('--description', type=str, default='autoresearch-style moving_mnist_v2 smoke')
+    return p.parse_args()
+
+
+def append_results(results_path: Path, run_tag: str, seed: int, agg: dict, description: str) -> None:
     row = {
         'run_tag': run_tag,
         'split': 'val',
@@ -46,22 +55,23 @@ def append_results(run_tag: str, seed: int, agg: dict) -> None:
         'metric_l1_fs1': f"{agg['metric_l1_fs1']:.6f}",
         'delta_l1': f"{agg['delta_l1']:.6f}",
         'status': 'keep' if agg['delta_iou'] > 0.02 and agg['delta_l1'] < 0 else ('discard' if agg['delta_iou'] <= 0 else 'ambiguous'),
-        'description': 'autoresearch-style moving_mnist_v2 smoke',
+        'description': description,
     }
-    with RESULTS.open() as f:
+    with results_path.open() as f:
         reader = csv.DictReader(f, delimiter='\t')
         fields = reader.fieldnames
         rows = list(reader)
     rows = [r for r in rows if r['run_tag'] != run_tag]
     rows.append(row)
-    with RESULTS.open('w', newline='') as f:
+    with results_path.open('w', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fields, delimiter='\t')
         writer.writeheader()
         writer.writerows(rows)
 
 
 def main() -> None:
-    spec = json.loads(SPEC.read_text())
+    args = parse_args()
+    spec = json.loads(args.spec.read_text())
     run_tag = spec['run_tag']
     remote_run = f'/root/{run_tag}.sh'
     local_art = DOCS / 'artifacts' / run_tag
@@ -167,9 +177,12 @@ def main() -> None:
         '    --data-bin "$REMOTE_DATA_DIR/moving_mnist_v2_val.bin" \\',
         '    --weights "$WT" \\',
         '    --out-json "exp/${RUN_TAG}/eval_fs${FS}.json" \\',
-        '    --voc "$VOC" --seq-len "$SEQ_LEN" --frame-side "$IMG_SIZE" --frame-count 3 \\',
+        '    --voc "$VOC" --seq-len "$SEQ_LEN" --frame-side "$IMG_SIZE" --frame-count 3 --target-frame-index 0 \\',
         '    --n-layer "$N_LAYER" --n-embd "$N_EMBD" --head-size "$HEAD_SIZE" \\',
-        '    --prefix-ratio "$PREFIX_RATIO" --eval-samples "$EVAL_SAMPLES" --seed "$SEED"',
+        f'    --mask-mode {mask_mode} \\',
+        '    --prefix-ratio "${PREFIX_RATIO:-0.333333}" \\',
+        '    --square-size "${SQUARE_SIZE:-0}" --square-frame-side "${SQUARE_FRAME_SIDE:-0}" --square-frame-index "${SQUARE_FRAME_INDEX:-0}" \\',
+        '    --eval-samples "$EVAL_SAMPLES" --seed "$SEED"',
         'done',
         "/root/miniconda3/bin/python - <<'PY'",
         'import json, pathlib, os',
@@ -210,7 +223,7 @@ def main() -> None:
         local_tmp.unlink(missing_ok=True)
 
     agg = json.loads((DOCS / 'artifacts' / run_tag / 'summary_agg.json').read_text())[run_tag]
-    append_results(run_tag, int(spec['random_seed']), agg)
+    append_results(args.results, run_tag, int(spec['random_seed']), agg, args.description)
     print(json.dumps({'run_tag': run_tag, **agg}, indent=2))
 
 

@@ -1,0 +1,4 @@
+analysis/__pycache__/
+analysis/moving_mnist_v2_loop_logs/
+analysis/moving_mnist_v2_specs/
+analysis/moving_mnist_v2_loop_state.json

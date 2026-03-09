@@ -1,1 +1,2 @@
 run_tag	split	seed	metric_iou_fs0	metric_iou_fs1	delta_iou	metric_f1_fs0	metric_f1_fs1	delta_f1	metric_l1_fs0	metric_l1_fs1	delta_l1	status	description
+moving_mnist_v2_smoke_20260309a	val	20260309	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.070808	0.070808	0.000000	discard	autoresearch-style moving_mnist_v2 smoke
