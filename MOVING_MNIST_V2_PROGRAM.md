@@ -6,6 +6,11 @@ This line adopts the useful parts of `karpathy/autoresearch` and drops the parts
 
 Find out whether Future-Seed helps on a video task that is visually intuitive enough to demo, while keeping the research loop tight and auditable.
 
+## Current status
+
+This branch is currently paused because the first three spec variants all returned `discard` under the fixed evaluator.
+See [MOVING_MNIST_V2_STATUS.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/MOVING_MNIST_V2_STATUS.md).
+
 ## The adaptation
 
 `autoresearch` is built around three ideas:

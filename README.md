@@ -147,6 +147,11 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - large scale (`L6/E384`) too slow under `RWKV7_KERNEL=python`
 - hard-stop (`exit_code=143`)
 
+7. `moving_mnist_v2_*`
+- autoresearch-style Moving MNIST reboot branch
+- baseline full-frame interpolation, `num_digits=2`, and `square 8x8` all returned `delta_iou = 0.0000`
+- branch paused after consecutive discards; see [MOVING_MNIST_V2_STATUS.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/MOVING_MNIST_V2_STATUS.md)
+
 ## Notes
 - `realvideo_complex_v1_ratio67_coarse150_20260303T132507Z` showed one-off coarse positive (`+0.0263`), but follow-up frozen rechecks did not hold.
 - `ratio50` is budget-sensitive: 60/90-step runs show no gain, while 120/150-step runs show clear positive delta.
@@ -161,6 +166,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - [VIDEO_TASKS_EXPLAINED.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/VIDEO_TASKS_EXPLAINED.md): what the current video experiments actually are, with qualitative frame panels for interpolation and square-hole filling.
 - [SOLIDITY_CASES.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/SOLIDITY_CASES.md): separates truly solid wins from single-run wins and pending branches.
 - [TASK_CANDIDATES.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/TASK_CANDIDATES.md): ranked list of likely next effective tasks.
+- [MOVING_MNIST_V2_STATUS.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/MOVING_MNIST_V2_STATUS.md): close-out note for the autoresearch-style Moving MNIST v2 branch.
 - [task_candidate_scoreboard.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task_candidate_scoreboard.csv): sortable evidence table for ready-now and derived candidate tasks.
 - [solid_case_matrix.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/solid_case_matrix.csv): compact evidence-tier table for the main positive cases.
 - [solid_case_matrix.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/solid_case_matrix.svg): visual matrix of gain size vs evidence strength.

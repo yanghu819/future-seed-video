@@ -1,9 +1,9 @@
-priority	status	mutation	goal	note
-1	queued	num_digits=2	increase occlusion and future dependence	baseline-discard fallback 1
-2	queued	mask_mode=square,square_size=8,square_frame_side=24,square_frame_index=0	shift to middle-frame hole filling	baseline-discard fallback 2
-3	queued	speed_max=4.00	make interpolation harder without changing semantics	keep num_digits=1
-4	queued	img_size=20	reduce seq_len and improve throughput	keep task semantics fixed
-5	queued	digit_size_min=12,digit_size_max=16	increase foreground area	one concept: bigger digit support
-6	queued	num_digits=3	further increase overlap and ambiguity	aggressive occlusion branch
-7	queued	mask_mode=square,square_size=10,square_frame_side=24,square_frame_index=0	bigger hole for clearer visual difference	stronger inpainting pressure
-8	queued	speed_min=2.00,speed_max=4.00	faster motion regime	one concept: faster dynamics
+priority	status	mutation	goal	note	run_tag	result_status	delta_iou	delta_l1	launched_at	finished_at	spec_path	description
+1	discard	num_digits=2	increase occlusion and future dependence	baseline-discard fallback 1	moving_mnist_v2_nd2_20260309T065421Z	discard	0.000000	0.000000	20260309T065421Z	20260309T073045Z	/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/moving_mnist_v2_specs/moving_mnist_v2_nd2_20260309T065421Z.json	autoresearch mutation: num_digits=2
+2	discard	mask_mode=square,square_size=8,square_frame_side=24,square_frame_index=0	shift to middle-frame hole filling	baseline-discard fallback 2	moving_mnist_v2_masksquare_sq8_sfs24_sfi0_20260309T084833Z	discard	0.000000	0.000000	20260309T084833Z	20260309T111315Z	/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/moving_mnist_v2_specs/moving_mnist_v2_masksquare_sq8_sfs24_sfi0_20260309T084833Z.json	autoresearch mutation: mask_mode=square,square_size=8,square_frame_side=24,square_frame_index=0
+3	paused	speed_max=4.00	make interpolation harder without changing semantics	keep num_digits=1; branch stopped after two discards								
+4	paused	img_size=20	reduce seq_len and improve throughput	keep task semantics fixed; branch stopped after two discards								
+5	paused	digit_size_min=12,digit_size_max=16	increase foreground area	one concept: bigger digit support; branch stopped after two discards								
+6	paused	num_digits=3	further increase overlap and ambiguity	aggressive occlusion branch; branch stopped after two discards								
+7	paused	mask_mode=square,square_size=10,square_frame_side=24,square_frame_index=0	bigger hole for clearer visual difference	stronger inpainting pressure; branch stopped after two discards								
+8	paused	speed_min=2.00,speed_max=4.00	faster motion regime	one concept: faster dynamics; branch stopped after two discards								

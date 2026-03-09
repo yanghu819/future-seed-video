@@ -1,2 +1,4 @@
 run_tag	split	seed	metric_iou_fs0	metric_iou_fs1	delta_iou	metric_f1_fs0	metric_f1_fs1	delta_f1	metric_l1_fs0	metric_l1_fs1	delta_l1	status	description
 moving_mnist_v2_smoke_20260309a	val	20260309	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.070808	0.070808	0.000000	discard	autoresearch-style moving_mnist_v2 smoke
+moving_mnist_v2_nd2_20260309T065421Z	val	20260309	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.129754	0.129754	0.000000	discard	autoresearch mutation: num_digits=2
+moving_mnist_v2_masksquare_sq8_sfs24_sfi0_20260309T084833Z	val	20260309	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.259705	0.259705	0.000000	discard	test-square
