@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import fcntl
 import json
 import re
 import subprocess
@@ -22,6 +23,7 @@ LAUNCHER = ANALYSIS / 'launch_moving_mnist_v2_smoke.py'
 GENERATED_SPECS = ANALYSIS / 'moving_mnist_v2_specs'
 LOG_DIR = ANALYSIS / 'moving_mnist_v2_loop_logs'
 LOOP_STATE = ANALYSIS / 'moving_mnist_v2_loop_state.json'
+LOCK_PATH = ANALYSIS / 'moving_mnist_v2_loop.lock'
 SSH = ['ssh', '-i', str(Path.home() / '.ssh' / 'autodl_ed25519'), '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=no', '-p', '19708', 'root@connect.bjb2.seetacloud.com']
 
 STANDARD_QUEUE_FIELDS = [
@@ -80,6 +82,16 @@ def save_queue(fields: list[str], rows: list[dict]) -> None:
         writer = csv.DictWriter(f, fieldnames=fields, delimiter='\t')
         writer.writeheader()
         writer.writerows(rows)
+
+
+def reset_stale_running(rows: list[dict]) -> None:
+    for row in rows:
+        if row.get('status') == 'running':
+            row['status'] = 'queued'
+            row['run_tag'] = ''
+            row['launched_at'] = ''
+            row['spec_path'] = ''
+            row['description'] = row.get('description') or ''
 
 
 def parse_scalar(raw: str):
@@ -196,8 +208,15 @@ def main() -> None:
     GENERATED_SPECS.mkdir(parents=True, exist_ok=True)
     LOG_DIR.mkdir(parents=True, exist_ok=True)
 
+    lock_file = LOCK_PATH.open('w')
+    try:
+        fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        raise RuntimeError(f'loop already running: {LOCK_PATH}')
+
     base_spec = load_json(BASE_SPEC_PATH)
     fields, rows = load_queue()
+    reset_stale_running(rows)
     save_queue(fields, rows)
     save_json(LOOP_STATE, {
         'started_at': now_utc(),
@@ -268,6 +287,7 @@ def main() -> None:
         'ended_at': now_utc(),
         'finished': True,
     })
+    lock_file.close()
 
 
 if __name__ == '__main__':
