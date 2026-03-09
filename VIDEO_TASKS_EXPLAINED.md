@@ -16,6 +16,7 @@ This is **video interpolation / missing-middle-frame recovery**, not square-hole
 Qualitative cases:
 
 - [task5_gap40_cases.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_gap40_cases.png)
+- [task5_gap40_error_cases.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/task5_gap40_error_cases.png)
 
 Why this task matters:
 
@@ -37,6 +38,7 @@ This is **video inpainting in the middle frame**, closer to what people usually 
 Qualitative cases:
 
 - [square_migration_cases.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/square_migration_cases.png)
+- [square_migration_error_cases.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/square_migration_error_cases.png)
 
 Why this task matters:
 
@@ -62,3 +64,8 @@ Columns:
 
 - if you want the cleanest **video interpolation** case, look at `task5_gap40_cases.png`
 - if you want the more intuitive **video inpainting / hole filling** case, look at `square_migration_cases.png`
+
+## What the new error maps clarify
+
+- `task5` is a full-middle-frame interpolation task, so the visual difference is distributed over the whole 16x16 frame and can look modest in plain grayscale panels. The error maps are more honest there than the raw images.
+- `square migration` is a local-hole task, so zooming the hole and its error map makes the difference much easier to see. In the strongest cases, `FS0` collapses to a smoother/emptier hole fill while `FS1` restores more of the local structure.

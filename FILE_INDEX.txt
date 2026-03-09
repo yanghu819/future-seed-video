@@ -27,6 +27,7 @@
 .git/objects/00/5e85f765bb3b1041b34d29e968caf663066a76
 .git/objects/00/8377c0aaa3ded8d373a6d88db7d6eacea55ee2
 .git/objects/01/0315b72fa74df91efc7abdf7e3810f926199c9
+.git/objects/01/6a9a1b71dc80ff0dc008209031255abb40378e
 .git/objects/01/796b6c0b1b8a517e9985c17f46908bd28de9b8
 .git/objects/02/7c0b530f4a441679fd386d96497e29c94adf89
 .git/objects/02/c4867b409ab1b7156fc26939b7377e050b715d
@@ -36,6 +37,7 @@
 .git/objects/03/d3ca7d4e09b43cccdc9368ed527e11cdf09c43
 .git/objects/04/07a2fae843b99c029c8b8b3d1bf2dbce7a0af2
 .git/objects/04/152a6c41b8312dbdfc02c55d53444e173c8c5c
+.git/objects/06/3b06460da1a1e2f3ad2da0ff2d93410face463
 .git/objects/06/8c05b524395cd34d48dd693a973628837c9ff5
 .git/objects/06/cfa471d3c6fd681030e56810e5c7f671b2cbdb
 .git/objects/07/0659678d1ff790b135797266287a9093857802
@@ -49,6 +51,7 @@
 .git/objects/0b/5522b5049787a021e6aac6f3fde53c98ed262e
 .git/objects/0c/2802d7529e25ef847509dc045afd287e8387ba
 .git/objects/0c/84199fd4c8017afc3f12bacc7997a137b62cd9
+.git/objects/0c/8790cfef0d218fa3b186e1aaef5598bed3e583
 .git/objects/0d/b48a126db0bf0d721d48bfdba2faf2355802b5
 .git/objects/0e/3ba65c338b3233df9dfa69f05b4fd54311db30
 .git/objects/0e/bf1ad93b308675bde725c49d66aa46c4076bc1
@@ -100,6 +103,7 @@
 .git/objects/22/f6cf755c31d167b08ccb1ecee23f9dbd82604c
 .git/objects/23/0ed5f8b58857223f0903b86e3f8b94387940b8
 .git/objects/23/b92568d13cb4bd61799c59dfaca83a0324a4e8
+.git/objects/23/f413e3355d7533a8289fa6fee95059b1bfaa07
 .git/objects/24/767d9875aa51262c44e53285c80032090225af
 .git/objects/24/805c2bc73ef01847eb95a42308793aaa81dc2f
 .git/objects/24/f946ba7181761a382e33cc25f65fddaae1269c
@@ -115,10 +119,12 @@
 .git/objects/28/c1f6dfa841f6db3cc88902e86c995d246b181e
 .git/objects/28/eb826262810e8aaef21832a645d86fb16b2e46
 .git/objects/29/534243f05db275cddbd1b6f09a1a12e0adc49d
+.git/objects/29/5ee913c7fd73304d96b58cbb1fbf5b5c82b946
 .git/objects/2a/c24ef150775a6b15aff5c3ad7f26d3a8e52df7
 .git/objects/2b/875014a3afc0e956aa8803e0473f93e8578c8f
 .git/objects/2b/996971ef232551e016a9daadcc650fafc9a4e0
 .git/objects/2c/70ffb1b48f213cce7eea0f4aba085a4c2823c6
+.git/objects/2c/b76aa64b767dc4ceb209dd3ddc92f24f54131e
 .git/objects/2d/d4c613ea1b6e99c43ae91222089ebbb25c92db
 .git/objects/2d/e7209c6b96df34402899bf6d00f3ac00ba9876
 .git/objects/2f/c9f5ddcbab9586d52b20057cca5649213004eb
@@ -234,10 +240,13 @@
 .git/objects/61/ef19f9a137285b868498c3415496877a8912bb
 .git/objects/62/26104a3627b0c167b24344a082e15577529464
 .git/objects/62/2ed1d2d6dd8812516555ebeea8f28b8ba7799d
+.git/objects/62/92d63565c9369b157e91b1c7c14fa4bc7f385b
+.git/objects/62/ec56d196a1e1faca2d5a7047c476019e2c11c8
 .git/objects/63/a394cffd29043a1f10d1fb0bb9fdbd455c4782
 .git/objects/64/096bb73935bf28d670c25731d8525dbbba6b7d
 .git/objects/64/c646b1b120f2c9970cc04b524a8e3c2ad5d41b
 .git/objects/64/d5538338391450e22f974244c6a82443bf5c68
+.git/objects/64/ef5ee6d53864d970794951ba8cf1181c393a42
 .git/objects/65/0a94110bd2e344dfbbf77d49ff2b279fad7d5f
 .git/objects/65/efe4fb759672fac441f9bf809eefc87e47259f
 .git/objects/67/8354ce56f8187a24556c53d4038f50edaf5687
@@ -347,6 +356,7 @@
 .git/objects/9b/2305aa5ec7a1173f8ef118b9f54e20a3a1a70f
 .git/objects/9c/36dae410e9fe7fcc13de63e82030fd874f317d
 .git/objects/9c/fb70310083f4567618a7b5924c1ca4fa28bb76
+.git/objects/9d/51877c9de11339806c518bbf092a3b6e0610d4
 .git/objects/9e/b87b87ee33ecf0198acaa29dacb84801a1aa38
 .git/objects/9f/323639a84cf964f18f2d515633b2841351b553
 .git/objects/9f/8916d97f70a4e784dc9b9d9aa08a998839dcf6
@@ -414,6 +424,7 @@
 .git/objects/be/6e51d659152efc9c11693a17145505581b10b0
 .git/objects/be/b8906496a83e70bf1e8c6b991a61cce2f86d61
 .git/objects/bf/57301556626dedd78a6b3dee57bb7917bbb097
+.git/objects/bf/ac874fd59ab12170478edb16ee7abf9dfb3281
 .git/objects/c0/6ebd41a5683995dc34bc5ddc129b439ff020eb
 .git/objects/c0/b6ab62e5f57470cd6aa2297abe8245a0ec5152
 .git/objects/c0/be9052a0ffa128bae7aa71ee6bf0f0d7c47bd5
@@ -439,6 +450,7 @@
 .git/objects/cd/8e824204a261fe0dd0e94ef406a00f338881ff
 .git/objects/cd/d4cfdd4a7ef74b9b518177b1200a77c5c9dfa4
 .git/objects/cd/e2fde93f413bfd0c2ed025145efe34092df348
+.git/objects/ce/135f782299ea9401d736f0a0e9ec38809f65d3
 .git/objects/ce/24dab044fdbc6415ea4b42e3b3dfbad0d964a6
 .git/objects/ce/5615a869bd398a086c0ca100edec3b2a2fe2f1
 .git/objects/ce/8beff0c777f456bb221dbba3944375e650679b
@@ -461,6 +473,7 @@
 .git/objects/d5/dc384cc633b2f9ab5359a5a5c7845015cef4f8
 .git/objects/d5/fc30e1cfc3f5267cd63d7690ca103ced5656d0
 .git/objects/d6/160b55c52400c01b7ebd41d52a354f9e05dbab
+.git/objects/d6/22758de874f1e6cdfd68176e6dfe4fded6743c
 .git/objects/d6/4a40bff1f89edb1c3310f441a3e63e1f7c58a9
 .git/objects/d6/96661ed4db35fe4ac712d18d751aac255aba18
 .git/objects/d6/a6811331896ebb74374e530c5ca8f776ba9ee3
@@ -488,6 +501,7 @@
 .git/objects/e1/c4653e9becfa601cdf5bb287a7b9833ce83435
 .git/objects/e1/e58c9a50877e8f50d05f39f14f9c35147e0797
 .git/objects/e3/f2edafbf7ae275bdec312f99c8745ec247a40f
+.git/objects/e4/31c90d1cedd53be041006fe6d63b8897158c1c
 .git/objects/e4/cac965f47f239d5536dfae314388c6dabcaa8d
 .git/objects/e5/2e3d6ccc949976648cb5aaab7a729ad1e80e85
 .git/objects/e5/ea0b6b29279814d51d54eb162b63a77c0df97a
@@ -506,6 +520,7 @@
 .git/objects/ed/99defadbb2cb91b41f8e3c2ef11149c02a72d0
 .git/objects/ee/4606694d1c07d9a80ab8f4709a63e525c937f7
 .git/objects/ee/a5c12dff8cb9df17e1b176a4e29a85b3bfb1ff
+.git/objects/ee/c0ccd2d69d2643a43efde9709381f7c774899a
 .git/objects/ee/e96305293577df2d1f923e0952bbdb9b8e4817
 .git/objects/ef/f33f7ab8ee4096e0def197854524396d14b293
 .git/objects/f0/7527b41c801021f79ec3ac8249f49043981c39
@@ -526,6 +541,7 @@
 .git/objects/f5/6166fe73ea4e8baf1323247177bc7716a8222c
 .git/objects/f5/7be58c34285c9a5a14bb2ba5cf6cfc61beccdd
 .git/objects/f6/4493917131bfd48937716640e05f7dc93ab84e
+.git/objects/f7/ba2e80711fba95ea2c1a2e13b0708677c073f0
 .git/objects/f7/cf099337c8a1257515527c15968bb661e49f2f
 .git/objects/f8/959b982c2103030006de56b8a799e38a434851
 .git/objects/f8/cc3b91b433ca5beace37e26552782eb851153c
@@ -559,7 +575,9 @@ analysis/figures/ratio50_budget_boundary.svg
 analysis/figures/solid_case_matrix.png
 analysis/figures/solid_case_matrix.svg
 analysis/figures/square_migration_cases.png
+analysis/figures/square_migration_error_cases.png
 analysis/figures/task5_gap40_cases.png
+analysis/figures/task5_gap40_error_cases.png
 analysis/figures/task5_gap_family.png
 analysis/figures/task5_gap_family.svg
 analysis/figures/task5_realvideo_gap4_long_v2_curves.png
@@ -570,6 +588,7 @@ analysis/plot_task5_gap4_curves.py
 analysis/plot_task5_gap_family.py
 analysis/ratio50_budget_boundary_caption.md
 analysis/ratio50_budget_boundary_summary.csv
+analysis/render_video_error_cases.py
 analysis/render_video_qual_cases.py
 analysis/solid_case_matrix.csv
 analysis/task5_gap_family_caption.md
