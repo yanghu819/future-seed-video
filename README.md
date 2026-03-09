@@ -158,6 +158,7 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 ## Analysis Docs
 - [BUDGET_BOUNDARY.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/BUDGET_BOUNDARY.md): formal note for the `ratio50` budget threshold claim.
 - [VISUAL_SUMMARY.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/VISUAL_SUMMARY.md): quick figure guide for the main solid line and the strong `gap4` positive line.
+- [VIDEO_TASKS_EXPLAINED.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/VIDEO_TASKS_EXPLAINED.md): what the current video experiments actually are, with qualitative frame panels for interpolation and square-hole filling.
 - [SOLIDITY_CASES.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/SOLIDITY_CASES.md): separates truly solid wins from single-run wins and pending branches.
 - [TASK_CANDIDATES.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/TASK_CANDIDATES.md): ranked list of likely next effective tasks.
 - [task_candidate_scoreboard.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task_candidate_scoreboard.csv): sortable evidence table for ready-now and derived candidate tasks.
