@@ -198,22 +198,23 @@ Evidence:
 
 Why it ranks last:
 
-- early runs show degenerate FG behavior (`0.0` or `1.0`)
-- metric is not trustworthy enough yet for efficient FS evaluation
-- fixing that metric path is extra work before we can trust any result
+- the old FG-metric path was degenerate
+- the autoresearch-style reboot also failed cleanly under a fixed external evaluator
+- three variants all returned exact ties between FS0 and FS1, so this branch is currently low ROI
 
 Evidence:
 
 - [moving_mnist_coarse120_20260302T110339Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/moving_mnist_coarse120_20260302T110339Z/summary_agg.json)
 - [moving_mnist_bin2_coarse120_20260302T114400Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/moving_mnist_bin2_coarse120_20260302T114400Z/summary_agg.json)
 - [moving_mnist_bin2_fgW8_coarse120_20260302T122607Z summary_agg.json](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/artifacts/moving_mnist_bin2_fgW8_coarse120_20260302T122607Z/summary_agg.json)
+- [MOVING_MNIST_V2_STATUS.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/MOVING_MNIST_V2_STATUS.md)
 
 ## Current Recommendation
 
 1. `task5` real-video family is now strongly positive across `adjacent`, `gap4`, `gap8`, `gap16`, `gap24`, `gap32`, and `gap40`, and `gap40` has already passed 3-seed confirm
 2. `realvideo_square_migration_confirm3_20260308T123605Z` has now passed, so frame-local square-hole transfer is part of the solid positive set
 3. the automatic `gap24 -> gap32 -> gap40` ladder completed cleanly; every rung passed the strong-positive gate
-4. do not pivot to `moving_mnist`
+4. do not continue `moving_mnist` right now
 
 ## Square Migration
 

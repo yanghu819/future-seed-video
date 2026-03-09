@@ -564,12 +564,15 @@
 .git/refs/remotes/origin/main
 BUDGET_BOUNDARY.md
 FILE_INDEX.txt
+MOVING_MNIST_V2_PROGRAM.md
+MOVING_MNIST_V2_STATUS.md
 README.md
 SOLIDITY_CASES.md
 TASK_CANDIDATES.md
 VIDEO_TASKS_EXPLAINED.md
 VISUAL_SUMMARY.md
 analysis/build_realtriplet_midfirst_bin.py
+analysis/moving_mnist_v2_results.tsv
 analysis/figures/ratio50_budget_boundary.png
 analysis/figures/ratio50_budget_boundary.svg
 analysis/figures/solid_case_matrix.png

@@ -4,3 +4,11 @@ analysis/moving_mnist_v2_specs/
 analysis/moving_mnist_v2_loop_state.json
 analysis/moving_mnist_v2_loop.lock
 analysis/moving_mnist_v2_loop_stdout.log
+analysis/reconcile_moving_mnist_v2_run.py
+analysis/reconcile_square_stdout.log
+analysis/render_video_triptych_case.py
+artifacts/moving_mnist_v2_builder_test_20260309/
+artifacts/moving_mnist_v2_smoke_20260309/
+artifacts/moving_mnist_v2_smoke_20260309a/
+artifacts/moving_mnist_v2_nd2_*/
+artifacts/moving_mnist_v2_masksquare_*/
