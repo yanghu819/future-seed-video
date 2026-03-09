@@ -1,0 +1,8 @@
+goal=P_realvideo_square_migration_confirm
+metric_primary=maskacc_fg_val
+threshold_confirm=avg_delta_fg_nonneg_3seed
+priority_reason=square migration coarse passed cleanly on seed20260318; add two new seeds to test whether transferred square-hole gains are stable
+hard_constraints=single_gpu_only; wait_for=none; initialize from ratio50_full150 corresponding seed; frozen recipe copied from square migration coarse
+fixed=data=realvideo_complex_midfirst,vocab=32,seq_len=1728,mask=square(frame_side=24,frame_index=0,size=8),n_layer=3,n_embd=192,head=32,device_bsz=24,batch=96,max_iters=120,eval_interval=30,maskacc_iters=50,fg_threshold=2,random_seed=20260317
+change=FUTURE_SEED(0|1),ALPHA(fs1=-2),INIT_WEIGHTS(from ratio50 full150 same seed)
+failure=oom_or_nan_or_missing_metric

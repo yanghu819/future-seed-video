@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="520" viewBox="0 0 1120 520">
+<rect width="100%" height="100%" fill="#f7f4ed"/>
+<text x="40" y="34" font-size="24" font-family="Helvetica, Arial, sans-serif" font-weight="700" fill="#192126">Future-Seed Positive Cases: solidity by evidence tier</text>
+<text x="40" y="56" font-size="12" font-family="Helvetica, Arial, sans-serif" fill="#47525d">Left: FG gain (percentage points). Right: validation-loss improvement (FS0 - FS1). Circle size ~= seed count.</text>
+<line x1="210.0" y1="70" x2="210.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="210.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">0</text>
+<line x1="255.0" y1="70" x2="255.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="255.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">2</text>
+<line x1="300.0" y1="70" x2="300.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="300.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">4</text>
+<line x1="345.0" y1="70" x2="345.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="345.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">6</text>
+<line x1="390.0" y1="70" x2="390.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="390.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">8</text>
+<line x1="435.0" y1="70" x2="435.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="435.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">10</text>
+<line x1="480.0" y1="70" x2="480.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="480.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">12</text>
+<line x1="525.0" y1="70" x2="525.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="525.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">14</text>
+<line x1="570.0" y1="70" x2="570.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="570.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">16</text>
+<text x="390.0" y="42" text-anchor="middle" font-size="14" font-family="Helvetica, Arial, sans-serif" font-weight="700" fill="#192126">FG gain (pp)</text>
+<line x1="243.8" y1="70" x2="243.8" y2="430" stroke="#7c7c7c" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="247.8" y="448" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#666">main-line threshold 1.5pp</text>
+<line x1="630.0" y1="70" x2="630.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="630.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">0.0</text>
+<line x1="675.0" y1="70" x2="675.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="675.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">0.1</text>
+<line x1="720.0" y1="70" x2="720.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="720.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">0.2</text>
+<line x1="765.0" y1="70" x2="765.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="765.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">0.3</text>
+<line x1="810.0" y1="70" x2="810.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="810.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">0.4</text>
+<line x1="855.0" y1="70" x2="855.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="855.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">0.5</text>
+<line x1="900.0" y1="70" x2="900.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="900.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">0.6</text>
+<line x1="945.0" y1="70" x2="945.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="945.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">0.7</text>
+<line x1="990.0" y1="70" x2="990.0" y2="430" stroke="#d8d2c6" stroke-width="1"/>
+<text x="990.0" y="60" text-anchor="middle" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#59636e">0.8</text>
+<text x="810.0" y="42" text-anchor="middle" font-size="14" font-family="Helvetica, Arial, sans-serif" font-weight="700" fill="#192126">Validation loss improvement</text>
+<text x="40" y="100" font-size="13" font-family="Helvetica, Arial, sans-serif" fill="#192126">ratio50 120-step</text>
+<text x="40" y="116" font-size="10" font-family="Helvetica, Arial, sans-serif" fill="#6a727a">strict multiseed boundary confirm</text>
+<circle cx="266.0" cy="96.0" r="14.5" fill="#0b6e4f" stroke="#111" stroke-width="1"/>
+<text x="278.0" y="100.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">2.5pp</text>
+<rect x="630.0" y="88.0" width="0.0" height="16" rx="3" fill="#0b6e4f" opacity="0.9"/>
+<text x="638.0" y="100.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">0.000</text>
+<text x="40" y="160" font-size="13" font-family="Helvetica, Arial, sans-serif" fill="#192126">ratio50 150-step</text>
+<text x="40" y="176" font-size="10" font-family="Helvetica, Arial, sans-serif" fill="#6a727a">5-seed aggregate, all non-negative</text>
+<circle cx="297.5" cy="156.0" r="19.5" fill="#0b6e4f" stroke="#111" stroke-width="1"/>
+<text x="309.5" y="160.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">3.9pp</text>
+<rect x="630.0" y="148.0" width="168.8" height="16" rx="3" fill="#0b6e4f" opacity="0.9"/>
+<text x="806.8" y="160.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">0.375</text>
+<text x="40" y="220" font-size="13" font-family="Helvetica, Arial, sans-serif" fill="#192126">task5 gap40</text>
+<text x="40" y="236" font-size="10" font-family="Helvetica, Arial, sans-serif" fill="#6a727a">3-seed confirm, all non-negative</text>
+<circle cx="538.7" cy="216.0" r="14.5" fill="#1f78b4" stroke="#111" stroke-width="1"/>
+<text x="550.7" y="220.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">14.6pp</text>
+<rect x="630.0" y="208.0" width="290.5" height="16" rx="3" fill="#1f78b4" opacity="0.9"/>
+<text x="928.5" y="220.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">0.645</text>
+<text x="40" y="280" font-size="13" font-family="Helvetica, Arial, sans-serif" fill="#192126">task5 adjacent</text>
+<text x="40" y="296" font-size="10" font-family="Helvetica, Arial, sans-serif" fill="#6a727a">single-run strong positive</text>
+<circle cx="546.4" cy="276.0" r="9.5" fill="#e07a00" stroke="#111" stroke-width="1"/>
+<text x="558.4" y="280.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">14.9pp</text>
+<rect x="630.0" y="268.0" width="319.0" height="16" rx="3" fill="#e07a00" opacity="0.9"/>
+<text x="957.0" y="280.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">0.709</text>
+<text x="40" y="340" font-size="13" font-family="Helvetica, Arial, sans-serif" fill="#192126">task5 gap24</text>
+<text x="40" y="356" font-size="10" font-family="Helvetica, Arial, sans-serif" fill="#6a727a">single-run strong positive</text>
+<circle cx="515.5" cy="336.0" r="9.5" fill="#e07a00" stroke="#111" stroke-width="1"/>
+<text x="527.5" y="340.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">13.6pp</text>
+<rect x="630.0" y="328.0" width="295.2" height="16" rx="3" fill="#e07a00" opacity="0.9"/>
+<text x="933.2" y="340.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">0.656</text>
+<text x="40" y="400" font-size="13" font-family="Helvetica, Arial, sans-serif" fill="#192126">square migration coarse</text>
+<text x="40" y="416" font-size="10" font-family="Helvetica, Arial, sans-serif" fill="#6a727a">coarse positive, confirm pending</text>
+<circle cx="352.4" cy="396.0" r="9.5" fill="#b23a48" stroke="#111" stroke-width="1"/>
+<text x="364.4" y="400.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">6.3pp</text>
+<rect x="630.0" y="388.0" width="192.1" height="16" rx="3" fill="#b23a48" opacity="0.9"/>
+<text x="830.1" y="400.0" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">0.427</text>
+<circle cx="40" cy="486" r="7" fill="#0b6e4f" stroke="#111" stroke-width="1"/>
+<text x="54" y="490" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">solid main line</text>
+<circle cx="220" cy="486" r="7" fill="#1f78b4" stroke="#111" stroke-width="1"/>
+<text x="234" y="490" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">solid discovery family</text>
+<circle cx="400" cy="486" r="7" fill="#e07a00" stroke="#111" stroke-width="1"/>
+<text x="414" y="490" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">strong single run</text>
+<circle cx="580" cy="486" r="7" fill="#b23a48" stroke="#111" stroke-width="1"/>
+<text x="594" y="490" font-size="11" font-family="Helvetica, Arial, sans-serif" fill="#192126">promising, not solid yet</text>
+</svg>

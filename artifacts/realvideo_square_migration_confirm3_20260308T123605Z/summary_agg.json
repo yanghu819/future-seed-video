@@ -1,0 +1,16 @@
+{
+  "realvideo_square_migration_confirm3": {
+    "n_seeds": 3,
+    "seeds": [
+      20260318,
+      20260317,
+      20260319
+    ],
+    "avg_delta_maskacc_fg_val": 0.0891,
+    "min_delta_maskacc_fg_val": 0.0633,
+    "max_delta_maskacc_fg_val": 0.1157,
+    "avg_delta_last_val_loss": -0.4154,
+    "all_non_negative_fg": true,
+    "pass_rule": true
+  }
+}

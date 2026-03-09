@@ -77,13 +77,15 @@ Why it now ranks fourth:
 
 - the gap ladder is now strong enough through `gap40`, so the highest-ROI next question is whether that success transfers into a more classic hole-filling geometry
 - this branch is no longer blocked: the training script now supports frame-local square masking for non-square triplet sequences
-- the first coarse run is already queued and then started under the frozen migrated recipe
+- that transfer now passes 3-seed confirm, so it is no longer just a queued branch
 
 Status:
 
-- running as `realvideo_square_migration_coarse120_seed20260318_20260308T031506Z`
-- source init: `rvc1_ratio50_full150_seed20260318_{fs0,fs1}`
+- confirm pass as `realvideo_square_migration_confirm3_20260308T123605Z`
+- source init family: `rvc1_ratio50_full150_seed{20260317,20260318,20260319}_{fs0,fs1}`
 - target mask: `square(frame_side=24, frame_index=0, size=8)`
+- avg `delta_maskacc_fg_val = +0.0891`
+- avg `delta_last_val_loss = -0.4154`
 
 ### 5. `task5_realvideo_gap40_confirm3` on `realtriplet_midfirst_gap40`
 
@@ -209,6 +211,11 @@ Evidence:
 ## Current Recommendation
 
 1. `task5` real-video family is now strongly positive across `adjacent`, `gap4`, `gap8`, `gap16`, `gap24`, `gap32`, and `gap40`, and `gap40` has already passed 3-seed confirm
-2. the highest-ROI active branch is now `realvideo_square_migration_coarse120_seed20260318_20260308T031506Z`
+2. `realvideo_square_migration_confirm3_20260308T123605Z` has now passed, so frame-local square-hole transfer is part of the solid positive set
 3. the automatic `gap24 -> gap32 -> gap40` ladder completed cleanly; every rung passed the strong-positive gate
 4. do not pivot to `moving_mnist`
+
+## Square Migration
+
+- `realvideo_square_migration_confirm3_20260308T123605Z` passed with `avg_delta_maskacc_fg_val = +0.0891` and all seed deltas non-negative.
+- This upgrades frame-local square-mask transfer from promising to solid.

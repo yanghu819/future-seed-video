@@ -1,0 +1,13 @@
+{
+  "realvideo_square_migration_confirm_seed20260319": {
+    "best_maskacc_val_fs0": 0.2601,
+    "best_maskacc_val_fs1": 0.3645,
+    "delta_maskacc_val": 0.10439999999999999,
+    "best_maskacc_fg_val_fs0": 0.2481,
+    "best_maskacc_fg_val_fs1": 0.3638,
+    "delta_maskacc_fg_val": 0.11570000000000003,
+    "last_val_loss_fs0": 2.6127,
+    "last_val_loss_fs1": 2.2059,
+    "delta_last_val_loss": -0.4067999999999996
+  }
+}

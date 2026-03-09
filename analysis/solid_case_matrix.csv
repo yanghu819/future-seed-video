@@ -1,0 +1,7 @@
+label,kind,n_seeds,delta_fg,delta_loss,note
+ratio50 120-step,solid-main,3,0.0249,0.0,strict multiseed boundary confirm
+ratio50 150-step,solid-main,5,0.0389,0.37518,"5-seed aggregate, all non-negative"
+task5 gap40,solid-discovery,3,0.1461,0.6455,"3-seed confirm, all non-negative"
+task5 adjacent,strong-single,1,0.1495,0.7089,single-run strong positive
+task5 gap24,strong-single,1,0.1358,0.6559,single-run strong positive
+square migration coarse,promising-not-solid,1,0.0633,0.427,"coarse positive, confirm pending"

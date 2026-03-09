@@ -97,6 +97,14 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - `delta_maskacc_fg_val = +0.0633`
 - `delta_last_val_loss = -0.4270`
 
+18. `realvideo_square_migration_confirm3_20260308T123605Z`
+- 3-seed confirm pass on the frame-local square-hole transfer branch
+- seeds: `20260318/20260317/20260319`
+- avg `delta_maskacc_fg_val = +0.0891`
+- min/max `delta_maskacc_fg_val = +0.0633 / +0.1157`
+- avg `delta_last_val_loss = -0.4154`
+- all seed deltas non-negative
+
 ## Step-Extension Probes
 
 1. `realvideo_complex_v1_ratio50_scratch180_seed20260320_20260306T040234Z`
@@ -150,8 +158,11 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 ## Analysis Docs
 - [BUDGET_BOUNDARY.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/BUDGET_BOUNDARY.md): formal note for the `ratio50` budget threshold claim.
 - [VISUAL_SUMMARY.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/VISUAL_SUMMARY.md): quick figure guide for the main solid line and the strong `gap4` positive line.
+- [SOLIDITY_CASES.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/SOLIDITY_CASES.md): separates truly solid wins from single-run wins and pending branches.
 - [TASK_CANDIDATES.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/TASK_CANDIDATES.md): ranked list of likely next effective tasks.
 - [task_candidate_scoreboard.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/task_candidate_scoreboard.csv): sortable evidence table for ready-now and derived candidate tasks.
+- [solid_case_matrix.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/solid_case_matrix.csv): compact evidence-tier table for the main positive cases.
+- [solid_case_matrix.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/solid_case_matrix.svg): visual matrix of gain size vs evidence strength.
 - [ratio50_budget_boundary_summary.csv](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/ratio50_budget_boundary_summary.csv): compact numeric table behind that note.
 - [ratio50_budget_boundary_caption.md](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/ratio50_budget_boundary_caption.md): paper-style caption text for the budget figure.
 - [ratio50_budget_boundary.png](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/ratio50_budget_boundary.png): raster figure for slides/docs.
@@ -178,6 +189,5 @@ Source host: `connect.bjb2.seetacloud.com:19708`
 - `task5_realvideo_gap4_long_v2`, `task5_realvideo_long_v2`, `task5_realvideo_gap8_long_v1`, `task5_realvideo_gap16_long_v1`, `task5_realvideo_gap24_long_v1`, `task5_realvideo_gap32_long_v1`, and `task5_realvideo_gap40_long_v1` are all now confirmed positives
 - the automatic `gap24 -> gap32 -> gap40` ladder completed successfully; every rung passed the strong-positive gate
 - `task5_realvideo_gap40_confirm3_20260307T133455Z` has now passed, so the gap-ladder branch is in confirm-grade territory rather than just discovery
-- `realvideo_square_migration_coarse120_seed20260318_20260308T031506Z` already passed coarse with `delta_maskacc_fg_val = +0.0633`
-- the current active branch is square-migration confirm: `realvideo_square_migration_confirm_seed20260317_20260308T123605Z` -> `realvideo_square_migration_confirm_seed20260319_20260308T123605Z` -> aggregate `realvideo_square_migration_confirm3_20260308T123605Z`
+- `realvideo_square_migration_confirm3_20260308T123605Z` has now passed, upgrading frame-local square-mask transfer from promising to solid
 - `realvideo_square_migration` is now runnable because the frame-local square-mask patch has landed in the upstream training script

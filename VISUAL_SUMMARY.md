@@ -38,3 +38,14 @@
 - Interpretation:
   - this is the compact view showing the current best claim on the discovery side
   - the `task5` real-video family is not a one-off win; it stays strongly positive across multiple temporal gaps, and `gap40` has now passed 3-seed confirm
+
+## 5. Solidity Matrix
+
+- Figure: [solid_case_matrix.svg](/Users/torusmini/Downloads/autodl3-impainting-fs/future-seed-video/analysis/figures/solid_case_matrix.svg)
+- What to look at:
+  - `ratio50 120/150` are the solid main-line cases
+  - `task5 gap40` is the solid discovery-family case
+  - `square migration coarse` should now be read together with the new `square migration confirm3` result, not in isolation
+- Interpretation:
+  - not every positive run is equally solid
+  - the matrix separates multi-seed confirmed wins from single-run wins and still-maturing branches
